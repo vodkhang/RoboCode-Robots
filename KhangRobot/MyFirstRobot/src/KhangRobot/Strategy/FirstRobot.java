@@ -16,13 +16,13 @@ import robocode.util.Utils;
 
 import java.awt.Color;
 
-public class Ubolonto implements RobotStrategy {
+public class FirstRobot implements RobotStrategy {
     // Counting variable for the crazy movement
 
     private int count = 0;
     private AdvancedRobot mainRobot;
 
-    public Ubolonto(AdvancedRobot mainRobot) {
+    public FirstRobot(AdvancedRobot mainRobot) {
         this.mainRobot = mainRobot;
         mainRobot.setAllColors(Color.yellow);
         mainRobot.setBulletColor(Color.yellow);

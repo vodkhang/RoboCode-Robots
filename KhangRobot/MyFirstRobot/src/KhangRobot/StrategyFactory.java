@@ -7,7 +7,7 @@ package KhangRobot;
 import KhangRobot.Strategy.RamStrategy;
 import KhangRobot.Strategy.RobotStrategy;
 import KhangRobot.Strategy.SpinBot;
-import KhangRobot.Strategy.Ubolonto;
+import KhangRobot.Strategy.FirstRobot;
 import KhangRobot.Strategy.WallStrategy;
 
 /**
@@ -32,8 +32,8 @@ public class StrategyFactory {
 
     private static RobotStrategy getFirstRobotStrategy(KhangRobot khangRobot) {
         RobotStrategy robotStrategy = khangRobot.getRobotStrategy();
-        if (!(robotStrategy instanceof Ubolonto)) {
-            robotStrategy = new Ubolonto(khangRobot);
+        if (!(robotStrategy instanceof FirstRobot)) {
+            robotStrategy = new FirstRobot(khangRobot);
         }
         return robotStrategy;
     }
