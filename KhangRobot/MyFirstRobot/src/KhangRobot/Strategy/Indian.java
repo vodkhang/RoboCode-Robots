@@ -38,16 +38,16 @@ public class Indian implements RobotStrategy {
     public void normalRun() {
         // Bizarre movement
         System.out.println(count++);
-        if (getDistanceRemaining() == 0 && getTurnRemaining() == 0) {
+        if (mainRobot.getDistanceRemaining() == 0 && mainRobot.getTurnRemaining() == 0) {
             if (count % 50 < 8)
-                setAhead(30*dir);
+                mainRobot.setAhead(30*dir);
             else
-                 setAhead(10*dir);
+                 mainRobot.setAhead(10*dir);
 
             if (count % 50 < 8) {
-                setTurnLeft(10);
+                mainRobot.setTurnLeft(10);
             } else {
-                setTurnRight(10);
+                mainRobot.setTurnRight(10);
             }
         }
 
@@ -67,7 +67,11 @@ public class Indian implements RobotStrategy {
     public void onScannedRobot(ScannedRobotEvent e) {
         Helper.shootOnScannedRobot(e, mainRobot);
 
-        if (getDistanceRemaining() > 5 || getTurnRemaining() > 0) {
+        // Keep track of enemy's energy assuming 1-on-1
+        double enemyEnergyLost = lastEnemyEnergy - e.getEnergy();
+        lastEnemyEnergy = e.getEnergy();
+
+        if (mainRobot.getDistanceRemaining() > 5 || mainRobot.getTurnRemaining() > 0) {
             // If we are in a motion already, simple continue with it
             // 5 is for a smooth movement, we don't want to completely stop before moving again
             return;
@@ -76,27 +80,27 @@ public class Indian implements RobotStrategy {
             // Quickly go aside, but not exactly perpendicular
             double tankTurn = e.getBearing() + 60;
             System.out.println("They fired!");
-            setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
+            mainRobot.setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
-            setAhead(100*dir);
-        } else if (d > 100) {
+            mainRobot.setAhead(100*dir);
+        } else if (e.getDistance() > 100) {
             // Too far from them
             // Go toward, but not straight-forward, slightly to the side
             double tankTurn = e.getBearing() + 25;
-            setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
+            mainRobot.setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
-            setAhead(30*dir);
+            mainRobot.setAhead(30*dir);
         } else {
             // Not too far, not being fired at
             // Circle them (90 means perpendicular to their direction)
             double tankTurn = e.getBearing() + 90;
-            setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
-            setAhead(30*dir);           
+            mainRobot.setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
+            mainRobot.setAhead(30*dir);
         }
         
         // Do all the above then scan
-        execute();
-        scan();
+        mainRobot.execute();
+        mainRobot.scan();
     }
 
     /**
