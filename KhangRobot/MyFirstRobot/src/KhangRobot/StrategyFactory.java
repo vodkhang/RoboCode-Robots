@@ -9,6 +9,7 @@ import KhangRobot.Strategy.RobotStrategy;
 import KhangRobot.Strategy.SpinBot;
 import KhangRobot.Strategy.FirstRobot;
 import KhangRobot.Strategy.WallStrategy;
+import KhangRobot.Strategy.Indian;
 
 /**
  *
@@ -50,6 +51,14 @@ public class StrategyFactory {
         RobotStrategy robotStrategy = khangRobot.getRobotStrategy();
         if (!(robotStrategy instanceof WallStrategy)) {
             robotStrategy = new WallStrategy(khangRobot);
+        }
+        return robotStrategy;
+    }
+
+    private static RobotStrategy getIndianStrategy(KhangRobot khangRobot) {
+        RobotStrategy robotStrategy = khangRobot.getRobotStrategy();
+        if (!(robotStrategy instanceof Indian)) {
+            robotStrategy = new Indian(khangRobot);
         }
         return robotStrategy;
     }
@@ -103,17 +112,34 @@ public class StrategyFactory {
     }
 
     public static RobotStrategy generateNewStrategy(KhangRobot mainRobot) {
-        if (mainRobot.getOthers() > 3) {
-            mainRobot.resetTimeout();
-            return getFirstRobotStrategy(mainRobot);
-        } 
-        // if not timed out yet, we favor ram strategy
-        if (!isTimedOut) {
-            return favorFirstRobotStrategy(mainRobot);
-        } else {
-            // return a ram strategy
-            return getFirstRobotStrategy(mainRobot);
+        return cornerIndianRamStrategy(mainRobot);
+//        if (mainRobot.getOthers() > 3) {
+//            mainRobot.resetTimeout();
+//            return getFirstRobotStrategy(mainRobot);
+//        }
+//        // if not timed out yet, we favor ram strategy
+//        if (!isTimedOut) {
+//            return favorFirstRobotStrategy(mainRobot);
+//        } else {
+//            // return a ram strategy
+//            return getFirstRobotStrategy(mainRobot);
+//        }
+    }
+
+    public static RobotStrategy cornerIndianRamStrategy(KhangRobot robot) {
+        if (robot.getOthers() > 2) {
+            // TODO: return corner tactics
         }
+
+        double energy = robot.getEnergy();
+        double opponentEnergy = robot.getOpponentEnergy();
+        double energyAdvantage = energy - opponentEnergy;
+
+        if (energyAdvantage < 50) {
+            return getIndianStrategy(robot);
+        }
+
+        return getRamStrategy(robot);
     }
 }
 
