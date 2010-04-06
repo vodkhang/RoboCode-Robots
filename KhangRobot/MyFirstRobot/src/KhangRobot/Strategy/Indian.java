@@ -24,8 +24,8 @@ public class Indian implements RobotStrategy {
 
     public Indian(AdvancedRobot mainRobot) {
         this.mainRobot = mainRobot;
-        mainRobot.setAllColors(Color.yellow);
-        mainRobot.setBulletColor(Color.yellow);
+        mainRobot.setAllColors(Color.red);
+        mainRobot.setBulletColor(Color.red);
 
         // Make robot, gun, and radar turn independently of each other
         if (mainRobot instanceof KhangRobot) {
