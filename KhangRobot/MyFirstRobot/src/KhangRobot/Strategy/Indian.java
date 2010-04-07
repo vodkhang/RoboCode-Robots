@@ -78,7 +78,7 @@ public class Indian implements RobotStrategy {
         } else if (enemyEnergyLost < 3 && enemyEnergyLost > 1) {
             // Assume they fired if energy lost is 1-3
             // Quickly go aside, but not exactly perpendicular
-            double tankTurn = e.getBearing() + 60;
+            double tankTurn = e.getBearing() + 90 - (30*dir);
             System.out.println("They fired!");
             mainRobot.setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
@@ -86,7 +86,7 @@ public class Indian implements RobotStrategy {
         } else if (e.getDistance() > 100) {
             // Too far from them
             // Go toward, but not straight-forward, slightly to the side
-            double tankTurn = e.getBearing() + 25;
+            double tankTurn = e.getBearing() + 90 - (65*dir);
             mainRobot.setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
             mainRobot.setAhead(30*dir);
