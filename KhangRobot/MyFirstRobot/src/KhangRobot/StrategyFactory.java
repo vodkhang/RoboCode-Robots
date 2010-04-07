@@ -129,6 +129,7 @@ public class StrategyFactory {
     public static RobotStrategy cornerIndianRamStrategy(KhangRobot robot) {
         if (robot.getOthers() > 2) {
             // TODO: return corner tactics
+            return getIndianStrategy(robot);
         }
 
         double energy = robot.getEnergy();
