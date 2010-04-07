@@ -66,6 +66,7 @@ public class Indian implements RobotStrategy {
      */
     public void onScannedRobot(ScannedRobotEvent e) {
         Helper.shootOnScannedRobot(e, mainRobot);
+        //dir *= Math.signum(Math.random() - 0.2);
 
         // Keep track of enemy's energy assuming 1-on-1
         double enemyEnergyLost = lastEnemyEnergy - e.getEnergy();
@@ -78,7 +79,8 @@ public class Indian implements RobotStrategy {
         } else if (enemyEnergyLost < 3 && enemyEnergyLost > 1) {
             // Assume they fired if energy lost is 1-3
             // Quickly go aside, but not exactly perpendicular
-            double tankTurn = e.getBearing() + 90 - (30*dir);
+            dir *= -1;
+            double tankTurn = e.getBearing() + 90 - (10*dir);
             System.out.println("They fired!");
             mainRobot.setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
