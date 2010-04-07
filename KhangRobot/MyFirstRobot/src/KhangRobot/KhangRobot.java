@@ -140,12 +140,12 @@ public class KhangRobot extends AdvancedRobot {
 
     @Override
     public void onDeath(DeathEvent event) {
-        makeSound("a.wmv");
+        makeSound("death.wav");
     }
 
     @Override
     public void onWin(WinEvent event) {
-        makeSound("a.wmv");
+        makeSound("win.wav");
     }
 
     public void makeSound(String fileName) {
