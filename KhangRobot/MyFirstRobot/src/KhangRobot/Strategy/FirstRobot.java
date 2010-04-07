@@ -28,9 +28,7 @@ public class FirstRobot implements RobotStrategy {
         mainRobot.setBulletColor(Color.yellow);
 
         // Make robot, gun, and radar turn independently of each other
-        if (mainRobot instanceof KhangRobot) {
-            ((KhangRobot) mainRobot).setAllAdjustTrue();
-        }
+        Helper.setAllAdjustTrue(mainRobot);
         // Turn the radar around as fast as possible (the limit is 45 degree/tick)
         mainRobot.setTurnRadarRightRadians(Double.POSITIVE_INFINITY);
     }

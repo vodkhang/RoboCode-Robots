@@ -30,35 +30,24 @@ public class KhangRobot extends AdvancedRobot {
     public void setOpponentEnergy(double opponentEnergy) {
         this.opponentEnergy = opponentEnergy;
     }
-    public void setAllAdjustTrue() {
-        setAdjustGunForRobotTurn(true);
-        setAdjustRadarForGunTurn(true);
-        setAdjustRadarForRobotTurn(true);
-    }
-    public void setAllAdjustFalse() {
-        setAdjustGunForRobotTurn(false);
-        setAdjustRadarForGunTurn(false);
-        setAdjustRadarForRobotTurn(false);
-    }
+
     /**
      * Default behaviour
      */
     @Override
     public void run() {
-
-        setAllColors(Color.blue);
         robotStrategy = StrategyFactory.generateNewStrategy(this);
         while (true) {
-            robotStrategy.normalRun();
+            robotStrategy.normalRun();            
             setStrategy();
-            tickNumber --;
-            
-            // make sure that if no event happens. We can stop the game
-            if(tickNumber == 0) {
-                StrategyFactory.setIsTimedOut(true);
-                robotStrategy = StrategyFactory.generateNewStrategy(this);
-                resetTimeout();
-            }
+//            tickNumber --;
+//
+//            // make sure that if no event happens. We can stop the game
+//            if(tickNumber == 0) {
+//                StrategyFactory.setIsTimedOut(true);
+//                robotStrategy = StrategyFactory.generateNewStrategy(this);
+//                resetTimeout();
+//            }
         }
     }
     public void resetTimeout() {
@@ -104,6 +93,7 @@ public class KhangRobot extends AdvancedRobot {
      */
     @Override
     public void onHitWall(HitWallEvent event) {
+        System.out.println("robotStrategy = " + robotStrategy);
         robotStrategy.onHitWall(event);
         setStrategy();
     }

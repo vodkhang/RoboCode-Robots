@@ -4,6 +4,7 @@
  */
 package KhangRobot.Strategy;
 
+import KhangRobot.Helper;
 import KhangRobot.KhangRobot;
 import java.awt.Color;
 import robocode.AdvancedRobot;
@@ -27,9 +28,7 @@ public class RamStrategy implements RobotStrategy {
     public RamStrategy(AdvancedRobot mainRobot) {
         this.mainRobot = mainRobot;
         // Make robot, gun, and radar turn independently of each other
-        if (mainRobot instanceof KhangRobot) {
-            ((KhangRobot) mainRobot).setAllAdjustFalse();
-        }
+        Helper.setAllAdjustFalse(mainRobot);
         mainRobot.turnGunRight(mainRobot.getHeading()-mainRobot.getGunHeading());
         
         mainRobot.setAllColors(Color.BLUE);

@@ -1,3 +1,5 @@
-del /Q Strategy KhangRobot.class StrategyFactory.class
+cd ..\..\KhangRobot
+del /Q Strategy KhangRobot.class StrategyFactory.class Helper.class
 rd /Q Strategy
-xcopy MyFirstRobot\build\classes\KhangRobot\* . /s /i
+xcopy ..\RoboCode-Robots\KhangRobot\MyFirstRobot\build\classes\KhangRobot\* . /s /i
+pause

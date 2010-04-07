@@ -4,6 +4,7 @@
  */
 package KhangRobot;
 
+import KhangRobot.Strategy.Corners;
 import KhangRobot.Strategy.RamStrategy;
 import KhangRobot.Strategy.RobotStrategy;
 import KhangRobot.Strategy.SpinBot;
@@ -52,6 +53,14 @@ public class StrategyFactory {
         if (!(robotStrategy instanceof WallStrategy)) {
             robotStrategy = new WallStrategy(khangRobot);
         }
+        return robotStrategy;
+    }
+    private static RobotStrategy getCornersStrategy(KhangRobot khangRobot) {
+        RobotStrategy robotStrategy = khangRobot.getRobotStrategy();
+        if (robotStrategy == null || !(robotStrategy instanceof Corners)) {
+            robotStrategy = new Corners(khangRobot);
+        }
+        System.out.println("hello 4");
         return robotStrategy;
     }
 
@@ -127,19 +136,21 @@ public class StrategyFactory {
     }
 
     public static RobotStrategy cornerIndianRamStrategy(KhangRobot robot) {
-        if (robot.getOthers() > 2) {
-            // TODO: return corner tactics
-        }
-
-        double energy = robot.getEnergy();
-        double opponentEnergy = robot.getOpponentEnergy();
-        double energyAdvantage = energy - opponentEnergy;
-
-        if (energyAdvantage < 50) {
-            return getIndianStrategy(robot);
-        }
-
-        return getRamStrategy(robot);
+        return getCornersStrategy(robot);
+//        if (robot.getOthers() > 2) {
+//            // TODO: return corner tactics
+//            return getCornersStrategy(robot);
+//        }
+//
+//        double energy = robot.getEnergy();
+//        double opponentEnergy = robot.getOpponentEnergy();
+//        double energyAdvantage = energy - opponentEnergy;
+//
+//        if (energyAdvantage < 50) {
+//            return getIndianStrategy(robot);
+//        }
+//
+//        return getRamStrategy(robot);
     }
 }
 
