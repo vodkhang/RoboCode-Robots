@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package FirstTeam;
 
 import robocode.*;
 import robocode.util.Utils;
 import java.awt.Color;
+import java.io.Serializable;
 
 /**
  *
@@ -19,11 +19,10 @@ public class Rammer extends TeamRobot {
     private int turnDirection = 1; // Clockwise or counterclockwise
     private boolean isRobotScanned = false;
 
+    @Override
     public void run() {
-
-        turnGunRight(getHeading()-getGunHeading());
-
-        setAllColors(Color.BLUE);
+        turnGunRight(getHeading() - getGunHeading());
+        setAllColors(Color.RED);
 
         // The movement loop
         while (true) {
@@ -43,7 +42,7 @@ public class Rammer extends TeamRobot {
      * onScannedRobot: What to do when we see another robot
      */
     @Override
-    public void onScannedRobot(ScannedRobotEvent e) {        
+    public void onScannedRobot(ScannedRobotEvent e) {
         // NOTE: Robocode's bug?
         System.out.println("e.getName() = " + e.getName());
         if (isTeammate(e.getName() + "*")) {
@@ -56,6 +55,7 @@ public class Rammer extends TeamRobot {
             double bearingFromGun = Utils.normalRelativeAngleDegrees(absoluteBearing
                     - getGunHeading());
             setTurnRight(bearingFromGun);
+            System.out.println("turn to opponent");
             // We check gun heat here, because calling fire()
             // uses a turn, which could cause us to lose track
             // of the other robot.
@@ -125,5 +125,23 @@ public class Rammer extends TeamRobot {
         setAhead(40); // Ram him again!
         isRobotHit = true;
         execute();
+    }
+
+    @Override
+    public void onMessageReceived(MessageEvent event) {
+        Serializable eventMessage = event.getMessage();
+        if (eventMessage instanceof Point) {
+            Point p = (Point) eventMessage;
+            // Calculate x and y to target
+            double dx = p.getX() - this.getX();
+            double dy = p.getY() - this.getY();
+            // Calculate angle to target
+            double theta = Math.toDegrees(Math.atan2(dx, dy));
+
+            // Turn gun to target
+            setTurnRight(Utils.normalRelativeAngleDegrees(theta - getGunHeading()));
+            setAhead(100);
+            // Fire hard!
+        } // Set our colors
     }
 }
