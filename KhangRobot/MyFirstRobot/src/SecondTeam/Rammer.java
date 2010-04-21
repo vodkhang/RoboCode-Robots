@@ -2,8 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package FirstTeam;
+package SecondTeam;
 
 import robocode.*;
 import robocode.util.Utils;
@@ -13,15 +12,15 @@ import java.awt.Color;
  *
  * @author lonton
  */
-public class Rammer extends TeamRobot {
-
+public class Rammer extends AdvancedRobot {
+    public static final String INDIAN_NAME = "SecondTeam.Indian";
     private boolean isRobotHit = false;
     private int turnDirection = 1; // Clockwise or counterclockwise
     private boolean isRobotScanned = false;
 
     public void run() {
-
-        turnGunRight(getHeading()-getGunHeading());
+        setAllColors(Color.red);
+        turnGunRight(getHeading() - getGunHeading());
 
         setAllColors(Color.BLUE);
 
@@ -43,13 +42,16 @@ public class Rammer extends TeamRobot {
      * onScannedRobot: What to do when we see another robot
      */
     @Override
-    public void onScannedRobot(ScannedRobotEvent e) {        
-        // NOTE: Robocode's bug?
+    public void onScannedRobot(ScannedRobotEvent e) {
         System.out.println("e.getName() = " + e.getName());
-        if (isTeammate(e.getName() + "*")) {
-            isRobotScanned = false;
-            return;
+        if (getOthers() > 1) {
+            if (e.getName().equals(INDIAN_NAME)) {
+                isRobotScanned = false;
+                setTurnLeft(180);
+                return;
+            }
         }
+        // NOTE: Robocode's bug?        
 
         if (isRobotScanned) {
             double absoluteBearing = getHeading() + e.getBearing();
@@ -88,11 +90,13 @@ public class Rammer extends TeamRobot {
 
     }
 
+    @Override
     public void onHitRobot(HitRobotEvent e) {
         // NOTE: Robocode's bug?
-        if (isTeammate(e.getName() + "*")) {
+        if (e.getName().equals(INDIAN_NAME)) {
             // Oops, hit teammate, sorry go back
             isRobotHit = false;
+            setBack(100);
             return;
         }
 

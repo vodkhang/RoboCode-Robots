@@ -2,8 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package FirstTeam;
+package SecondTeam;
 
 import robocode.*;
 import robocode.util.Utils;
@@ -13,15 +12,16 @@ import java.awt.Color;
  *
  * @author lonton
  */
-public class Indian extends TeamRobot {
+public class Indian extends AdvancedRobot {
+
+    public static final String RAMMER_NAME = "SecondRobot.Rammer";
     private int count = 0; // counting variable for the crazy movement
     private double lastEnemyEnergy = 0;
     private double dir = 1; // 1 means running forward, -1 backward
 
     public void run() {
         // Our color
-        setColors(Color.red, Color.blue, Color.cyan);
-        setBulletColor(Color.yellow);
+        setAllColors(Color.red);
 
         // Make robot, gun, and radar turn independently of each other
         setAdjustGunForRobotTurn(true);
@@ -38,10 +38,11 @@ public class Indian extends TeamRobot {
             // Bizarre movement
             //System.out.println(count++);
             if (getDistanceRemaining() == 0 && getTurnRemaining() == 0) {
-                if (count % 50 < 8)
-                    setAhead(30*dir);
-                else
-                    setAhead(10*dir);
+                if (count % 50 < 8) {
+                    setAhead(30 * dir);
+                } else {
+                    setAhead(10 * dir);
+                }
 
                 if (count % 50 < 8) {
                     setTurnLeft(10);
@@ -65,21 +66,24 @@ public class Indian extends TeamRobot {
     /**
      * onScannedRobot: What to do when we see another robot
      */
+    @Override
     public void onScannedRobot(ScannedRobotEvent e) {
         // NOTE: Robocode's bug?
         System.out.println("e.getName() = " + e.getName());
-        if (isTeammate(e.getName() + "*")) {
-            setTurnRadarRightRadians(Double.POSITIVE_INFINITY);
-            return;
+        if (getOthers() > 1) {
+            if (e.getName().equals(RAMMER_NAME)) {
+                setTurnRadarRightRadians(Double.POSITIVE_INFINITY);
+                return;
+            }
         }
-
         double power;
         double d = e.getDistance();
         power = 3.0 * Math.exp(-0.002 * (d - 50));
-        if (power > 3)
+        if (power > 3) {
             power = 3;
-        else if (power < 0.1)
+        } else if (power < 0.1) {
             power = 0.1;
+        }
 
         // Calculate bullet's speed
         double v = 20 - (power * 3);
@@ -104,7 +108,7 @@ public class Indian extends TeamRobot {
         // Fire after turning the gun
         // If power is less than 2, there's a chance we don't shoot
         // TODO: this should be based directly on distance
-        if (Math.random() < power/2) {
+        if (Math.random() < power / 2) {
 //            if (getGunHeat() == 0.0) {
 //                try {
 //                	AudioInputStream inputStream = AudioSystem.getAudioInputStream(this.getClass().getResource("splat.wav"));
@@ -116,7 +120,7 @@ public class Indian extends TeamRobot {
 //                }
 //            }
             setFire(power);
-      }
+        }
 
         // Keep track of enemy's energy assuming 1-on-1
         double enemyEnergyLost = lastEnemyEnergy - e.getEnergy();
@@ -133,20 +137,20 @@ public class Indian extends TeamRobot {
             System.out.println("They fired!");
             setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
-            setAhead(100*dir);
+            setAhead(100 * dir);
         } else if (d > 100) {
             // Too far from them
             // Go toward, but not straight-forward, slightly to the side
             double tankTurn = e.getBearing() + 25;
             setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
             // NOTE: changing direction like this invalidated the above comment if dir < 0
-            setAhead(30*dir);
+            setAhead(30 * dir);
         } else {
             // Not too far, not being fired at
             // Circle them (90 means perpendicular to their direction)
             double tankTurn = e.getBearing() + 90;
             setTurnRight(Utils.normalRelativeAngleDegrees(tankTurn));
-            setAhead(30*dir);
+            setAhead(30 * dir);
         }
 
         // Do all the above then scan
@@ -171,5 +175,14 @@ public class Indian extends TeamRobot {
     public void onHitWall(HitWallEvent e) {
         // Go back if we hit the wall
         dir *= -1;
+    }
+
+    @Override
+    public void onBulletHit(BulletHitEvent event) {
+        if (getOthers() > 1) {
+            if (event.getName().equals(RAMMER_NAME)) {
+                setTurnLeft(20);
+            }
+        }
     }
 }
