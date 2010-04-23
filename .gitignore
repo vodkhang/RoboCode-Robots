@@ -1,5 +1,5 @@
 libs/
 dist/
 build/
-.class
+*.class
 .wav
