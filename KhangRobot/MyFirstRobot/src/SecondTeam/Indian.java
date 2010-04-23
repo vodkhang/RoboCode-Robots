@@ -21,7 +21,7 @@ public class Indian extends AdvancedRobot {
 
     public void run() {
         // Our color
-        setAllColors(Color.red);
+        setAllColors(Color.BLUE);
 
         // Make robot, gun, and radar turn independently of each other
         setAdjustGunForRobotTurn(true);
