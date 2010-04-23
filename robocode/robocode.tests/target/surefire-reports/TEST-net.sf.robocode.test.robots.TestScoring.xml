@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="3.911" errors="0" skipped="0" tests="1" name="net.sf.robocode.test.robots.TestScoring">
+<testsuite failures="0" time="4.399" errors="0" skipped="0" tests="1" name="net.sf.robocode.test.robots.TestScoring">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Software\jdk\jre\bin"/>
@@ -21,7 +21,7 @@
     <property name="basedir" value="D:\RMIT_Learning\Robocode-workspace\robocode\robocode.tests"/>
     <property name="java.endorsed.dirs" value="D:\Software\jdk\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\KHANGV~1\AppData\Local\Temp\surefirebooter1139465770890346369.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\KHANGV~1\AppData\Local\Temp\surefirebooter3868131694961425697.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\KHANGV~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -64,5 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="3.829" classname="net.sf.robocode.test.robots.TestScoring" name="run"/>
+  <testcase time="4.398" classname="net.sf.robocode.test.robots.TestScoring" name="run"/>
 </testsuite>

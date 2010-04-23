@@ -21,7 +21,7 @@
     <property name="basedir" value="D:\RMIT_Learning\Robocode-workspace\robocode\robocode.tests"/>
     <property name="java.endorsed.dirs" value="D:\Software\jdk\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\KHANGV~1\AppData\Local\Temp\surefirebooter1139465770890346369.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\KHANGV~1\AppData\Local\Temp\surefirebooter3868131694961425697.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\KHANGV~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -64,7 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.554" classname="net.sf.robocode.test.robots.TestUndeadThread" name="net.sf.robocode.test.robots.TestUndeadThread">
+  <testcase time="0.586" classname="net.sf.robocode.test.robots.TestUndeadThread" name="net.sf.robocode.test.robots.TestUndeadThread">
     <skipped/>
   </testcase>
 </testsuite>

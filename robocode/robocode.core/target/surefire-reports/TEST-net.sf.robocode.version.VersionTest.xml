@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.035" errors="0" skipped="0" tests="22" name="net.sf.robocode.version.VersionTest">
+<testsuite failures="0" time="0.038" errors="0" skipped="0" tests="22" name="net.sf.robocode.version.VersionTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Software\jdk\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="D:\RMIT_Learning\Robocode-workspace\robocode\robocode.core"/>
     <property name="java.endorsed.dirs" value="D:\Software\jdk\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\KHANGV~1\AppData\Local\Temp\surefirebooter5547798099104437820.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\KHANGV~1\AppData\Local\Temp\surefirebooter4324081538273143620.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\KHANGV~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -63,26 +63,26 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="same"/>
+  <testcase time="0.002" classname="net.sf.robocode.version.VersionTest" name="same"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="equalVersion"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="equalAlphas"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="equalBetas"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greater"/>
+  <testcase time="0.004" classname="net.sf.robocode.version.VersionTest" name="equalAlphas"/>
+  <testcase time="0.002" classname="net.sf.robocode.version.VersionTest" name="equalBetas"/>
+  <testcase time="0.003" classname="net.sf.robocode.version.VersionTest" name="greater"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterShort"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterShort2"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterShortBeta"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterShortBeta3"/>
+  <testcase time="0" classname="net.sf.robocode.version.VersionTest" name="greaterShortBeta3"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterShortBeta2"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterLong"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="smaller"/>
-  <testcase time="0.002" classname="net.sf.robocode.version.VersionTest" name="greaterToo"/>
-  <testcase time="0" classname="net.sf.robocode.version.VersionTest" name="greaterThanBeta"/>
-  <testcase time="0" classname="net.sf.robocode.version.VersionTest" name="smallerThanBeta"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="smallerThanAlpha"/>
+  <testcase time="0" classname="net.sf.robocode.version.VersionTest" name="smaller"/>
+  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterToo"/>
+  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="greaterThanBeta"/>
+  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="smallerThanBeta"/>
+  <testcase time="0.002" classname="net.sf.robocode.version.VersionTest" name="smallerThanAlpha"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="compareBetas"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="compareBetas2"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="compareBetas3"/>
   <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="compareBetas4"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="compareBetasShort"/>
-  <testcase time="0.001" classname="net.sf.robocode.version.VersionTest" name="compareBetasShort2"/>
+  <testcase time="0" classname="net.sf.robocode.version.VersionTest" name="compareBetasShort"/>
+  <testcase time="0" classname="net.sf.robocode.version.VersionTest" name="compareBetasShort2"/>
 </testsuite>

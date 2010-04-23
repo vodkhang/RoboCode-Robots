@@ -49,6 +49,7 @@ public class BattleEventDispatcher implements IBattleListener {
 		for (IBattleListener listener : listeners) {
 			try {
 				listener.onBattleStarted(event);
+				//System.out.println("listener: " + listener);
 			} catch (Throwable ex) {
 				logError("onBattleStarted " + listener.getClass(), ex);
 			}
@@ -119,6 +120,7 @@ public class BattleEventDispatcher implements IBattleListener {
 		for (IBattleListener listener : listeners) {
 			try {
 				listener.onTurnStarted(event);
+				System.out.println("BattleEventDispatcher, on TurnStarted listener: " + listener);
 			} catch (Throwable ex) {
 				logError("onTurnStarted " + listener.getClass(), ex);
 			}
