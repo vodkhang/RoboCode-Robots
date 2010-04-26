@@ -2,8 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package KhangRobot;
+
 
 import robocode.AdvancedRobot;
 import robocode.ScannedRobotEvent;
@@ -14,7 +14,8 @@ import robocode.util.Utils;
  * @author Khang Vo
  */
 public class Helper {
-    public static  void shootOnScannedRobot(ScannedRobotEvent e, AdvancedRobot mainRobot) {
+
+    public static void shootOnScannedRobot(ScannedRobotEvent e, AdvancedRobot mainRobot) {
         // Click buttons with robot names on the right side to see println messages
         // System.out.println("radar\t" + getRadarHeading());
         // System.out.println("enemy\t" + (getHeading() + e.getBearing()));
@@ -55,4 +56,6 @@ public class Helper {
         // Fire after turning the gun
         mainRobot.setFire(power);
     }
+
+    
 }

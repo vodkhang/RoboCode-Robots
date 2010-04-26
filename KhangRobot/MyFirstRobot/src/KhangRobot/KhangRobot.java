@@ -3,6 +3,15 @@ package KhangRobot;
 import KhangRobot.Strategy.RobotStrategy;
 import robocode.*;
 import java.awt.Color;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -127,5 +136,39 @@ public class KhangRobot extends AdvancedRobot {
     public void onHitWall(HitWallEvent event) {
         robotStrategy.onHitWall(event);
         setStrategy();
+    }
+
+    @Override
+    public void onDeath(DeathEvent event) {
+        makeSound("death.wav");
+    }
+
+    @Override
+    public void onWin(WinEvent event) {
+        makeSound("win.wav");
+    }
+
+    public void makeSound(String fileName) {
+        AudioInputStream inputStream = null;
+        try {
+            inputStream = AudioSystem.getAudioInputStream(this.getClass().getResource(fileName));
+            System.out.println("inputStream = " + inputStream);
+            //inputStream = AudioSystem.getAudioInputStream(this.getClass().getResource(fileName));
+            Clip clip = AudioSystem.getClip();
+            clip.open(inputStream);
+            clip.loop(0);
+        } catch (LineUnavailableException ex) {
+            System.out.println("ex = " + ex);
+        } catch (UnsupportedAudioFileException ex) {
+            System.out.println("ex = " + ex);
+        } catch (IOException ex) {
+            System.out.println("ex = " + ex);
+        } finally {
+            try {
+                inputStream.close();
+            } catch (IOException ex) {
+                System.out.println("ex = " + ex);
+            }
+        }
     }
 }

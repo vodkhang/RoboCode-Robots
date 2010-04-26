@@ -1,3 +1,11 @@
 libs/
 dist/
 build/
+*.class
+*.wav
+*.png
+*.jpg
+*.jpeg
+*.jar
+.svn/
+*.xml
