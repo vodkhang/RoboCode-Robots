@@ -8,3 +8,60 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY org.eclipse.core.resources 4 368 2010-04-23 23:57:03.373
 !MESSAGE Variable references non-existent resource : ${workspace_loc:robocode.api/target/launch}
+!SESSION 2010-04-24 16:38:26.672 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-04-24 16:38:58.040
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-04-24 16:39:11.315
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-04-24 16:39:11.315
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-04-24 16:39:11.315
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-04-24 16:39:11.315
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-04-24 16:39:11.315
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-04-24 16:39:11.315
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-04-24 16:39:11.315
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-04-24 16:39:11.316
+!MESSAGE OK
+!SESSION 2010-05-01 00:13:39.612 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2010-05-01 00:14:48.156
+!MESSAGE Usage data uploaded to http://udc.eclipse.org/upload.php in 12183 milliseconds.
