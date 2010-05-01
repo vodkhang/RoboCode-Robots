@@ -23,7 +23,7 @@ package robocode.control.snapshot;
  * @since 1.6.2
  */
 public interface IBulletSnapshot {
-
+	double getHeading();
 	/**
 	 * Returns the bullet state.
 	 *

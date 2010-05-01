@@ -38,7 +38,8 @@ import java.util.Dictionary;
 public final class BulletSnapshot implements java.io.Serializable, IXmlSerializable, IBulletSnapshot {
 
 	private static final long serialVersionUID = 1L;
-
+	/** The Heading of the bullet */
+	private double heading;
 	/** The bullet state */
 	private BulletState state;
 
@@ -83,12 +84,14 @@ public final class BulletSnapshot implements java.io.Serializable, IXmlSerializa
 	 */
 	public BulletSnapshot(BulletPeer bullet) {
 		state = bullet.getState();
-
+		
 		power = bullet.getPower();
 
 		x = bullet.getX();
 		y = bullet.getY();
 
+		heading = bullet.getHeading();
+		
 		paintX = bullet.getPaintX();
 		paintY = bullet.getPaintY();
 
@@ -100,6 +103,12 @@ public final class BulletSnapshot implements java.io.Serializable, IXmlSerializa
 		explosionImageIndex = bullet.getExplosionImageIndex();
 
 		bulletId = bullet.getBulletId();
+	}
+	/**
+	 * {@inheritDoc}}
+	 */
+	public double getHeading() {
+		return heading;
 	}
 
 	/**

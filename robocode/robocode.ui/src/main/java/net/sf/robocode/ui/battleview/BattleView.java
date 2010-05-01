@@ -57,7 +57,13 @@ public class BattleView extends Canvas {
 
 	private final static Color CANVAS_BG_COLOR = SystemColor.controlDkShadow;
 
-	private final static Area BULLET_AREA = new Area(new Ellipse2D.Double(-0.5, -0.5, 1, 1));
+	// vodkhang@gmail.com
+	// We will defer the initialization of bullet area when we need to get the direction of the bullet to  
+	//	draw a good rectangle
+	//private final static Area BULLET_AREA = new Area(new Line2D.Double(0.5, 0.5, 5, 5));
+	private final static Area BULLET_AREA = new Area();
+	//private final static Area BULLET_AREA = new Area(new Rectangle2D.Double(0.5, 0.5, 3, 1));
+	//private final static Area BULLET_AREA = new Area(new Ellipse2D.Double(-0.5, -0.5, 1, 1));
 
 	private final static int ROBOT_TEXT_Y_OFFSET = 24;
 
@@ -538,39 +544,58 @@ public class BattleView extends Canvas {
 
 		double x, y;
 
-		for (IBulletSnapshot IBulletSnapshot : snapShot.getBullets()) {
-			x = IBulletSnapshot.getPaintX();
-			y = battleField.getHeight() - IBulletSnapshot.getPaintY();
+		for (IBulletSnapshot bulletSnapShot : snapShot.getBullets()) {
+			x = bulletSnapShot.getPaintX();
+			y = battleField.getHeight() - bulletSnapShot.getPaintY();
 
 			AffineTransform at = AffineTransform.getTranslateInstance(x, y);
 
-			if (IBulletSnapshot.getState().getValue() <= BulletState.MOVING.getValue()) {
+			if (bulletSnapShot.getState().getValue() <= BulletState.MOVING.getValue()) {
 
 				// radius = sqrt(x^2 / 0.1 * power), where x is the width of 1 pixel for a minimum 0.1 bullet
-				double scale = max(2 * sqrt(2.5 * IBulletSnapshot.getPower()), 2 / this.scale);
+				double scale = max(2 * sqrt(2.5 * bulletSnapShot.getPower()), 2 / this.scale);
 
+				// vodkhang@gmail.com
+				// BEGIN
+				// Try to scale the bullet to see it more clearly. I will add the rectangle at runtime because
+				//	we need to do some with heading			
+
+				// because the shape orientation is 90 degrees relative to the snapshot heading
+				double heading = bulletSnapShot.getHeading() + Math.PI/2;			
+				
+				//Shape shape = new Line2D.Double(0, 0, orientedHorizon, orientedVertical);
+				Shape shape = new Rectangle2D.Double(0, 0, 3, 0.5);
+				//Shape shape = new Ellipse2D.Double(0, 0, 1, 1);
+				BULLET_AREA.add(new Area(shape));
+				//BULLET_AREA.add(new Area(new Rectangle2D.Double(0, 0, orientedHorizon, orientedVertical)));
 				at.scale(scale, scale);
+				at.rotate(heading);
+				// FINISH
+				
 				Area bulletArea = BULLET_AREA.createTransformedArea(at);
 
+				// vodkhang@gmail.com
+				System.out.println("bullet area: " + bulletArea);
+				System.out.println("graphics: " + g);
+				
 				Color bulletColor;
 
 				if (properties.getOptionsRenderingForceBulletColor()) {
 					bulletColor = Color.WHITE;
 				} else {
-					bulletColor = new Color(IBulletSnapshot.getColor());
+					bulletColor = new Color(bulletSnapShot.getColor());
 				}
 				g.setColor(bulletColor);
-				g.fill(bulletArea);
-
+				g.fill(bulletArea);				
 			} else if (drawExplosions) {
-				if (!IBulletSnapshot.isExplosion()) {
-					double scale = sqrt(1000 * IBulletSnapshot.getPower()) / 128;
+				if (!bulletSnapShot.isExplosion()) {
+					double scale = sqrt(1000 * bulletSnapShot.getPower()) / 128;
 
 					at.scale(scale, scale);
 				}
 
 				RenderImage explosionRenderImage = imageManager.getExplosionRenderImage(
-						IBulletSnapshot.getExplosionImageIndex(), IBulletSnapshot.getFrame());
+						bulletSnapShot.getExplosionImageIndex(), bulletSnapShot.getFrame());
 
 				explosionRenderImage.setTransform(at);
 				explosionRenderImage.paint(g);
