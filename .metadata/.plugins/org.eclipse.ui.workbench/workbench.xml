@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="25" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -20,6 +20,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -31,13 +32,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" partName="BattleView.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" title="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" partName="BattleView.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" title="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-<editorState selectionHorizontalPixel="9" selectionLength="0" selectionOffset="10213" selectionTopPixel="4866"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16490" selectionTopPixel="8568"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MirroredGraphics.java" partName="MirroredGraphics.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/MirroredGraphics.java" title="MirroredGraphics.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/MirroredGraphics.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/MirroredGraphics.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1246" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -269,6 +275,12 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/robotinterfaces/IPaintEvents.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/Bullet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=robocode.ui/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.awt.geom(AffineTransform.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.core/src/main/java/net/sf/robocode/robotpaint/Graphics2DSerialized.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.core/src/main/java/net/sf/robocode/robotpaint/Graphics2DSerialized.java"/>
 </editors>
 <item historyLabel="IPaintEvents.java" index="0">
 <position info="not_deleted" x="1049" y="4"/>
@@ -276,8 +288,95 @@
 <item historyLabel="BattleView.java" index="1">
 <position info="not_deleted" x="10106" y="0"/>
 </item>
-<item active="true" historyLabel="BattleView.java" index="1">
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="10112" y="0"/>
+</item>
+<item historyLabel="Bullet.java" index="2">
+<position info="not_deleted" x="1292" y="6"/>
+</item>
+<item historyLabel="BulletPeer.java" index="3">
+<position info="not_deleted" x="7632" y="0"/>
+</item>
+<item historyLabel="BulletPeer.java" index="3">
+<position info="not_deleted" x="4469" y="12"/>
+</item>
+<item historyLabel="BulletPeer.java" index="3">
+<position info="not_deleted" x="8009" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="10101" y="10"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16002" y="15"/>
+</item>
+<item historyLabel="BulletSnapshot.java" index="4">
+<position info="not_deleted" x="2820" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="2109" y="10"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
 <position info="not_deleted" x="15730" y="11"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16085" y="0"/>
+</item>
+<item historyLabel="AffineTransform.class" index="5">
+<position/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16085" y="0"/>
+</item>
+<item historyLabel="AffineTransform.class" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16058" y="15"/>
+</item>
+<item historyLabel="AffineTransform.class" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16058" y="15"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="6">
+<position info="not_deleted" x="1394" y="20"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="6">
+<position info="not_deleted" x="54695" y="18"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="6">
+<position info="not_deleted" x="54728" y="57"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="6">
+<position info="not_deleted" x="35888" y="9"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="6">
+<position info="not_deleted" x="36169" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16058" y="15"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16811" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16777" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16797" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="1">
+<position info="not_deleted" x="16809" y="0"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="7">
+<position info="not_deleted" x="2498" y="8"/>
+</item>
+<item historyLabel="Graphics2DSerialized.java" index="7">
+<position info="not_deleted" x="16649" y="8"/>
+</item>
+<item active="true" historyLabel="Graphics2DSerialized.java" index="7">
+<position info="not_deleted" x="43769" y="8"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -288,6 +387,7 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1286c00"/>
 <trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1c2e163"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -300,6 +400,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graphics2DSerialized.java" tooltip="robocode.core/src/main/java/net/sf/robocode/robotpaint/Graphics2DSerialized.java">
+<persistable path="/robocode.core/src/main/java/net/sf/robocode/robotpaint/Graphics2DSerialized.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AffineTransform.class" tooltip="java.awt.geom.AffineTransform">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=robocode.ui/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.awt.geom(AffineTransform.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java">
+<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bullet.java" tooltip="robocode.api/src/main/java/robocode/Bullet.java">
+<persistable path="/robocode.api/src/main/java/robocode/Bullet.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPaintEvents.java" tooltip="robocode.api/src/main/java/robocode/robotinterfaces/IPaintEvents.java">
 <persistable path="/robocode.api/src/main/java/robocode/robotinterfaces/IPaintEvents.java"/>
 </file>
@@ -332,18 +444,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleField.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleField.java">
 <persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleField.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java">
-<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AvailableRobotsPanel.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/dialog/AvailableRobotsPanel.java">
-<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/dialog/AvailableRobotsPanel.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RobocodeMainBase.java" tooltip="robocode.core/src/main/java/net/sf/robocode/core/RobocodeMainBase.java">
-<persistable path="/robocode.core/src/main/java/net/sf/robocode/core/RobocodeMainBase.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleRecorder.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/recording/BattleRecorder.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/recording/BattleRecorder.java"/>
 </file>
 </mruList>
 </workbench>

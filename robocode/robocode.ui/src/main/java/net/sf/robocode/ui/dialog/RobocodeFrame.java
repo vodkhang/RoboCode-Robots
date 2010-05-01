@@ -268,9 +268,7 @@ public class RobocodeFrame extends JFrame {
 	private JPanel getBattleViewPanel() {
 		if (battleViewPanel == null) {
 			battleViewPanel = new JPanel();
-			//battleViewPanel.setPreferredSize(new Dimension(800, 600));
-			// vodkhang@gmail.com. changed to see what happened
-			battleViewPanel.setPreferredSize(new Dimension(2000, 2000));
+			battleViewPanel.setPreferredSize(new Dimension(800, 600));			
 			battleViewPanel.setLayout(null);
 			battleViewPanel.add(battleView);
 			battleViewPanel.addComponentListener(eventHandler);
