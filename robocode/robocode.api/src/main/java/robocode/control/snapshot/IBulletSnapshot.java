@@ -23,6 +23,23 @@ package robocode.control.snapshot;
  * @since 1.6.2
  */
 public interface IBulletSnapshot {
+	/**
+	 * Get the origin point X of the bullet so that we can make the bullet looks
+	 * 	like it is shot from a specific point and last to the end
+	 * @return original, starting point X of the bullet
+	 */
+	double getOriginX();
+	/**
+	 * Get the origin point X of the bullet so that we can make the bullet looks
+	 * 	like it is shot from a specific point and last to the end
+	 * @return original, starting point Y of the bullet
+	 */	
+	double getOriginY();
+	/**
+	 * Get the heading of the bullet because we may use line to represent the bullet
+	 * 	not use circle anymore, so we need a kind of heading to lead the line
+	 * @return
+	 */
 	double getHeading();
 	/**
 	 * Returns the bullet state.

@@ -81,7 +81,12 @@ public class BulletPeer {
 
 	protected double x;
 	protected double y;
-
+	
+	// vodkhang@gmail.com
+	private double originX;
+	private double originY;
+	// Finish Modification
+	
 	private double lastX;
 	private double lastY;
 
@@ -100,8 +105,13 @@ public class BulletPeer {
 
 	public BulletPeer(RobotPeer owner, BattleRules battleRules, int bulletId) {
 		super();
-
 		this.owner = owner;
+		
+		// vodkhang@gmail.com
+		originX = owner.getX();
+		originY = owner.getY();
+		// finish modification
+		
 		this.battleRules = battleRules;
 		this.bulletId = bulletId;
 		state = BulletState.FIRED;
@@ -253,9 +263,20 @@ public class BulletPeer {
 		return victim;
 	}
 
+	// vodkhang@gmail.com
+	public double getOriginX() {
+		return originX;
+	}
+
+	public double getOriginY() {
+		return originY;
+	}
+	// Finish modification
+	
 	public double getX() {
 		return x;
 	}
+
 
 	public double getY() {
 		return y;
