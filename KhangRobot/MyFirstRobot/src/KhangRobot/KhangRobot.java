@@ -24,14 +24,14 @@ import javax.sound.sampled.Clip;
 /**
  * KhangRobot - a robot by KhangVo
  */
-public class KhangRobot extends AdvancedRobot {
+public class KhangRobot extends TeamRobot {
     // the strategy - one strategy
 
-    private RobotStrategy robotStrategy;
+    protected RobotStrategy robotStrategy;
     private double opponentEnergy = 100;
     // We will try to change the strategy when it is long time and there is nothing happen
     public static final int NUMBER_OF_TICK = 700;
-    private int tickNumber = NUMBER_OF_TICK;
+    protected int tickNumber = NUMBER_OF_TICK;
 
     public RobotStrategy getRobotStrategy() {
         return robotStrategy;
