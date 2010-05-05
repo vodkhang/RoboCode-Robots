@@ -64,7 +64,7 @@ public class KhangRobot extends TeamRobot {
     public void run() {
 
         setAllColors(Color.blue);
-        robotStrategy = StrategyFactory.generateNewStrategy(this);
+        setStrategy();
         while (true) {
             robotStrategy.normalRun();
             setStrategy();
@@ -73,7 +73,7 @@ public class KhangRobot extends TeamRobot {
             // make sure that if no event happens. We can stop the game
             if (tickNumber == 0) {
                 StrategyFactory.setIsTimedOut(true);
-                robotStrategy = StrategyFactory.generateNewStrategy(this);
+                setStrategy();
                 resetTimeout();
             }
         }
@@ -83,7 +83,7 @@ public class KhangRobot extends TeamRobot {
         tickNumber = NUMBER_OF_TICK;
     }
 
-    private void setStrategy() {
+    protected void setStrategy() {
         robotStrategy = StrategyFactory.generateNewStrategy(this);
     }
 
@@ -100,6 +100,7 @@ public class KhangRobot extends TeamRobot {
     @Override
     public void onBulletHit(BulletHitEvent event) {
         setOpponentEnergy(event.getEnergy());
+        robotStrategy.onBulletHit(event);
     }
 
     /**
