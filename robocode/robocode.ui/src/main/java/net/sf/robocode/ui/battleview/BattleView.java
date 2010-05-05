@@ -564,19 +564,21 @@ public class BattleView extends Canvas {
 				double heading = bulletSnapShot.getHeading() + Math.PI/2;			
 				
 				//Shape shape = new Line2D.Double(0, 0, orientedHorizon, orientedVertical);
-				Shape shape = new Rectangle2D.Double(0, 0, 3, 0.5);
+				Shape shape = new Rectangle2D.Double(0, 0, 5, 1);
 				//Shape shape = new Ellipse2D.Double(0, 0, 1, 1);
 				BULLET_AREA.add(new Area(shape));
 				//BULLET_AREA.add(new Area(new Rectangle2D.Double(0, 0, orientedHorizon, orientedVertical)));
 				at.scale(scale, scale);
-				at.rotate(heading);
+				at.rotate(heading);				
+				
+
 				// FINISH
 				
 				Area bulletArea = BULLET_AREA.createTransformedArea(at);
 
 				// vodkhang@gmail.com
-				System.out.println("bullet area: " + bulletArea);
-				System.out.println("graphics: " + g);
+//				System.out.println("bullet area: " + bulletArea);
+//				System.out.println("graphics: " + g);
 				
 				Color bulletColor;
 
@@ -586,7 +588,15 @@ public class BattleView extends Canvas {
 					bulletColor = new Color(bulletSnapShot.getColor());
 				}
 				g.setColor(bulletColor);
-				g.fill(bulletArea);				
+				g.fill(bulletArea);
+				
+				// vodkhang@gmail.com, put the draw line here to have color
+				g.drawLine((int)bulletSnapShot.getOriginX(), 
+						battleField.getHeight() - (int)bulletSnapShot.getOriginY(), 
+						(int)bulletSnapShot.getPaintX(), 
+						battleField.getHeight() - (int)bulletSnapShot.getPaintY());
+				// FINISH
+				
 			} else if (drawExplosions) {
 				if (!bulletSnapShot.isExplosion()) {
 					double scale = sqrt(1000 * bulletSnapShot.getPower()) / 128;

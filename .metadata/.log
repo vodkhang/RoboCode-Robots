@@ -468,3 +468,97 @@ org.eclipse.jface.text.BadPositionCategoryException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SESSION 2010-05-01 22:36:07.564 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-01 22:36:27.519
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-01 22:36:36.198
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-01 22:36:36.199
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-01 22:36:36.199
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-01 22:36:36.199
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-01 22:36:36.199
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-01 22:36:36.199
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.199
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-01 22:36:36.199
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.199
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.199
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.200
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.200
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.200
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.200
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.200
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-01 22:36:36.200
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-01 22:36:36.200
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-01 22:36:36.200
+!MESSAGE OK
+!SESSION 2010-05-02 08:26:46.163 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-02 08:28:04.920
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-02 08:28:23.322
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-02 08:28:23.324
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-02 08:28:23.324
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-02 08:28:23.324
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-02 08:28:23.324
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-02 08:28:23.324
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-02 08:28:23.324
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-02 08:28:23.324
+!MESSAGE OK

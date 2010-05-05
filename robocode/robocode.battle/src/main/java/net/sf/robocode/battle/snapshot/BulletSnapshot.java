@@ -36,10 +36,17 @@ import java.util.Dictionary;
  * @since 1.6.1
  */
 public final class BulletSnapshot implements java.io.Serializable, IXmlSerializable, IBulletSnapshot {
-
+	
 	private static final long serialVersionUID = 1L;
+	
+	// vodkhang@gmail.com
+	/** The original point coordinate of the bullet */
+	private double originX;
+	private double originY;
 	/** The Heading of the bullet */
 	private double heading;
+	// Finish modification
+	
 	/** The bullet state */
 	private BulletState state;
 
@@ -90,6 +97,9 @@ public final class BulletSnapshot implements java.io.Serializable, IXmlSerializa
 		x = bullet.getX();
 		y = bullet.getY();
 
+		originX = bullet.getOriginX();
+		originY = bullet.getOriginY();
+		
 		heading = bullet.getHeading();
 		
 		paintX = bullet.getPaintX();
@@ -104,6 +114,19 @@ public final class BulletSnapshot implements java.io.Serializable, IXmlSerializa
 
 		bulletId = bullet.getBulletId();
 	}
+	
+	// vodkhang@gmail.com
+	/**
+	 * 
+	 */
+	public double getOriginX(){
+		return originX;
+	}
+	public double getOriginY() {
+		return originY;
+	}
+	
+	// Finish modification
 	/**
 	 * {@inheritDoc}}
 	 */
