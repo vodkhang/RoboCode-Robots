@@ -5,6 +5,7 @@
 
 package KhangRobot.Strategy;
 
+import robocode.BulletHitEvent;
 import robocode.HitByBulletEvent;
 import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
@@ -20,4 +21,5 @@ public interface RobotStrategy {
     public void onHitRobot(HitRobotEvent e);
     public void onHitWall(HitWallEvent event) ;
     public void normalRun() ;
+    public void onBulletHit(BulletHitEvent e);
 }
