@@ -85,5 +85,8 @@ public class FirstRobot implements RobotStrategy {
         mainRobot.ahead(100);
         mainRobot.execute();
     }
+
+    public void onBulletHit(BulletHitEvent e) {
+    }
 }
 

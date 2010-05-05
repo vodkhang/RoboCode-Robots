@@ -119,5 +119,7 @@ public class Indian implements RobotStrategy {
     public void onHitWall(HitWallEvent event) {
         dir *= -1;
     }
+    public void onBulletHit(BulletHitEvent e) {
+    }
 }
 

@@ -22,6 +22,7 @@ import robocode.ScannedRobotEvent;
 
 import java.awt.*;
 import robocode.AdvancedRobot;
+import robocode.BulletHitEvent;
 
 /**
  * WallStrategy - a sample robot by Mathew Nelson, and maintained by Flemming N. Larsen
@@ -117,5 +118,7 @@ public class WallStrategy implements RobotStrategy {
     }
 
     public void onHitWall(HitWallEvent event) {
+    }
+    public void onBulletHit(BulletHitEvent e) {
     }
 }

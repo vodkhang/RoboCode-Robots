@@ -7,6 +7,7 @@ package KhangRobot.Strategy;
 import KhangRobot.KhangRobot;
 import java.awt.Color;
 import robocode.AdvancedRobot;
+import robocode.BulletHitEvent;
 import robocode.HitByBulletEvent;
 import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
@@ -139,5 +140,7 @@ public class RamStrategy implements RobotStrategy {
     @Override
     public String toString() {
         return "Ram Strategy";
+    }
+    public void onBulletHit(BulletHitEvent e) {
     }
 }

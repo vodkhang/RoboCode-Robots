@@ -21,6 +21,7 @@ import robocode.HitWallEvent;
 import robocode.ScannedRobotEvent;
 
 import java.awt.*;
+import robocode.BulletHitEvent;
 
 /**
  * SpinBot - a sample robot by Mathew Nelson, and maintained by Flemming N. Larsen
@@ -75,5 +76,7 @@ public class SpinBot implements RobotStrategy {
     public void onHitWall(HitWallEvent event) {
         mainRobot.setTurnRight(10);
         mainRobot.setAhead(200);
+    }
+    public void onBulletHit(BulletHitEvent e) {
     }
 }
