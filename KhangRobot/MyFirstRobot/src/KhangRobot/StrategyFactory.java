@@ -63,6 +63,14 @@ public class StrategyFactory {
         return robotStrategy;
     }
 
+    private static RobotStrategy getSuperWallStrategy(KhangRobot khangRobot) {
+        RobotStrategy robotStrategy = khangRobot.getRobotStrategy();
+        if (!(robotStrategy instanceof SuperWalls)) {
+            robotStrategy = new Indian(khangRobot);
+        }
+        return robotStrategy;
+    }
+
     /**
      * 
      * @param khangRobot
@@ -140,6 +148,20 @@ public class StrategyFactory {
             return getIndianStrategy(robot);
         }
 
+        return getRamStrategy(robot);
+    }
+
+    public static RobotStrategy wallWhenCrowdedIndian(KhangRobot robot, int threshold) {
+        if (robot.getOthers() > threshold) {
+            return getSuperWallStrategy(robot);
+        }
+        return getIndianStrategy(robot);
+    }
+
+    public static RobotStrategy wallWhenCrowdedRammer(KhangRobot robot, int threshold) {
+        if (robot.getOthers() > threshold) {
+            return getSuperWallStrategy(robot);
+        }
         return getRamStrategy(robot);
     }
 }
