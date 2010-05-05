@@ -15,9 +15,9 @@ import robocode.HitWallEvent;
 import robocode.ScannedRobotEvent;
 import robocode.util.Utils;
 
-/**
- *
- * @author lonton
+/** Based on:
+ * SuperWalls - a sample robot by CrazyBassoonist based on the sample robot Walls by Mathew Nelson and maintained by Flemming N. Larsen
+ * Moves around the outer edge with two targeting systems
  */
 public class SuperWall implements RobotStrategy {
 	private static int HGShots;     //Number of shots with Head-On Targeting
