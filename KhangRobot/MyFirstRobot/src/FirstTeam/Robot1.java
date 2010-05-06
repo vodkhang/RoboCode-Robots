@@ -22,5 +22,13 @@ public class Robot1 extends KhangRobot {
         super.onScannedRobot(e);
     }
 
+    @Override
+    public void onHitRobot(HitRobotEvent e) {
+        if (isTeammate(e.getName() + "*")) {
+            // back up quickly
+            setAhead(-10*getVelocity());
+        }
+        super.onHitRobot(e);
+    }
 
 }
