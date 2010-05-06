@@ -3,6 +3,7 @@ package FirstTeam;
 import KhangRobot.KhangRobot;
 import KhangRobot.StrategyFactory;
 import java.awt.Color;
+import robocode.HitRobotEvent;
 import robocode.ScannedRobotEvent;
 
 public class Robot1 extends KhangRobot {
@@ -10,7 +11,7 @@ public class Robot1 extends KhangRobot {
 
     @Override
     protected void setStrategy() {
-        robotStrategy = StrategyFactory.wallWhenCrowdedIndian(this, 3);
+        robotStrategy = StrategyFactory.wallWhenCrowdedIndian(this, 5);
     }
 
     @Override
