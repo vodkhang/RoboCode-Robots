@@ -10,3 +10,6 @@ build/
 .svn/
 *.xml
 target/
+*.csv
+*.metadata
+*.html

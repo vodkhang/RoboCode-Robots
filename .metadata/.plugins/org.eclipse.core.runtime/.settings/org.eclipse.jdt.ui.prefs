@@ -1,4 +1,4 @@
-#Sat May 01 15:44:43 ICT 2010
+#Thu May 06 10:58:08 ICT 2010
 sourceHoverBackgroundColor=255,255,225
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
@@ -18,6 +18,6 @@ content_assist_proposals_background=255,255,255
 org.eclipse.jdt.ui.formatterprofiles.version=11
 content_assist_number_of_computers=16
 useQuickDiffPrefPage=true
-org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="khang's signature" enabled\="true" name\="sign">// vodkhang@gmail.com&\#13;\r\n// FINISH</template></templates>
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.Shape"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.awt.geom.Area"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.awt.Stroke"><rhs name\="java.awt.BasicStroke"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

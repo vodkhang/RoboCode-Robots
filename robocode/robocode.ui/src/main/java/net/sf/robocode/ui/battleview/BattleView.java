@@ -344,8 +344,12 @@ public class BattleView extends Canvas {
 
 			// Draw all text
 			drawText(g, snapShot);
+			
+			// vodkhang@gmail.com
+			drawBonuses(g, snapShot);
+			// FINISH
 		}
-
+		
 		// Restore the graphics state
 		graphicsState.restore(g);
 	}
@@ -540,11 +544,10 @@ public class BattleView extends Canvas {
 	private void drawBullets(Graphics2D g, ITurnSnapshot snapShot) {
 		final Shape savedClip = g.getClip();
 
-		g.setClip(null);
-
-		double x, y;
+		g.setClip(null);		
 
 		for (IBulletSnapshot bulletSnapShot : snapShot.getBullets()) {
+			double x, y;
 			x = bulletSnapShot.getPaintX();
 			y = battleField.getHeight() - bulletSnapShot.getPaintY();
 
@@ -556,6 +559,7 @@ public class BattleView extends Canvas {
 				double scale = max(2 * sqrt(2.5 * bulletSnapShot.getPower()), 2 / this.scale);
 
 				// vodkhang@gmail.com
+				
 				// BEGIN
 				// Try to scale the bullet to see it more clearly. I will add the rectangle at runtime because
 				//	we need to do some with heading			
@@ -564,10 +568,16 @@ public class BattleView extends Canvas {
 				double heading = bulletSnapShot.getHeading() + Math.PI/2;			
 				
 				//Shape shape = new Line2D.Double(0, 0, orientedHorizon, orientedVertical);
-				Shape shape = new Rectangle2D.Double(0, 0, 5, 1);
-				//Shape shape = new Ellipse2D.Double(0, 0, 1, 1);
+				Shape shape = new Rectangle2D.Double(0, -0.25, 5, 0.5);				
+//				Shape circleShape = new Ellipse2D.Double(-0.5, -0.5, 1, 1);
 				BULLET_AREA.add(new Area(shape));
-				//BULLET_AREA.add(new Area(new Rectangle2D.Double(0, 0, orientedHorizon, orientedVertical)));
+				//BULLET_AREA.add(new Area(circleShape));				
+				if (bulletSnapShot.getPower() < 2) {
+					scale *= 2;
+				} else {
+					scale *= 1.5;
+				}
+				
 				at.scale(scale, scale);
 				at.rotate(heading);				
 				
@@ -575,10 +585,6 @@ public class BattleView extends Canvas {
 				// FINISH
 				
 				Area bulletArea = BULLET_AREA.createTransformedArea(at);
-
-				// vodkhang@gmail.com
-//				System.out.println("bullet area: " + bulletArea);
-//				System.out.println("graphics: " + g);
 				
 				Color bulletColor;
 
@@ -590,30 +596,32 @@ public class BattleView extends Canvas {
 				g.setColor(bulletColor);
 				g.fill(bulletArea);
 				
-				// vodkhang@gmail.com, put the draw line here to have color
-				g.drawLine((int)bulletSnapShot.getOriginX(), 
-						battleField.getHeight() - (int)bulletSnapShot.getOriginY(), 
-						(int)bulletSnapShot.getPaintX(), 
-						battleField.getHeight() - (int)bulletSnapShot.getPaintY());
-				// FINISH
+//				// vodkhang@gmail.com, put the draw line here to have color
+//				g.drawLine((int)bulletSnapShot.getOriginX(), 
+//						battleField.getHeight() - (int)bulletSnapShot.getOriginY(), 
+//						(int)bulletSnapShot.getPaintX(), 
+//						battleField.getHeight() - (int)bulletSnapShot.getPaintY());
+//				// FINISH
 				
 			} else if (drawExplosions) {
 				if (!bulletSnapShot.isExplosion()) {
 					double scale = sqrt(1000 * bulletSnapShot.getPower()) / 128;
-
 					at.scale(scale, scale);
 				}
 
 				RenderImage explosionRenderImage = imageManager.getExplosionRenderImage(
 						bulletSnapShot.getExplosionImageIndex(), bulletSnapShot.getFrame());
-
+				// vodkhang@gmail.com I think that the drawing image is get a RenderImage then paint on Graphics2D
+				// FINISH
 				explosionRenderImage.setTransform(at);
 				explosionRenderImage.paint(g);
 			}
 		}
 		g.setClip(savedClip);
 	}
-
+	private void drawBonuses(Graphics2D g, ITurnSnapshot snapShot) {
+		
+	}
 	private void centerString(Graphics2D g, String s, int x, int y, Font font, FontMetrics fm) {
 		g.setFont(font);
 

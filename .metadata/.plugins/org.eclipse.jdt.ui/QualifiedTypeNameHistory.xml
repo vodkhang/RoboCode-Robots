@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.awt.geom.Area"/>
 <fullyQualifiedTypeName name="java.awt.geom.Rectangle2D.Double"/>
 <fullyQualifiedTypeName name="java.awt.geom.Line2D.Double"/>
 <fullyQualifiedTypeName name="java.awt.geom.Line2D"/>
@@ -9,4 +8,10 @@
 <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
 <fullyQualifiedTypeName name="java.awt.geom.Rectangle2D"/>
 <fullyQualifiedTypeName name="java.awt.BasicStroke"/>
+<fullyQualifiedTypeName name="java.awt.geom.Area"/>
+<fullyQualifiedTypeName name="java.awt.Shape"/>
+<fullyQualifiedTypeName name="robocode.control.snapshot.IBonusSnapShot"/>
+<fullyQualifiedTypeName name="net.sf.robocode.battle.snapshot.BonusSnapshot"/>
+<fullyQualifiedTypeName name="net.sf.robocode.battle.peer.BonusPeer"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

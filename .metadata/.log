@@ -562,3 +562,60 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 !MESSAGE Could not find view: org.eclipse.ui.internal.introview
 !SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-02 08:28:23.324
 !MESSAGE OK
+!SESSION 2010-05-05 21:20:11.334 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2010-05-06 00:14:38.393
+!MESSAGE Usage data uploaded to http://udc.eclipse.org/upload.php in 9641 milliseconds.
+!SESSION 2010-05-06 09:13:55.379 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-06 09:14:14.935
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-06 09:14:24.103
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-06 09:14:24.103
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-06 09:14:24.103
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-06 09:14:24.103
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-06 09:14:24.103
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-06 09:14:24.103
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-06 09:14:24.103
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-06 09:14:24.103
+!MESSAGE OK

@@ -15,11 +15,13 @@ package net.sf.robocode.battle.snapshot;
 
 
 import net.sf.robocode.battle.Battle;
+import net.sf.robocode.battle.peer.BonusPeer;
 import net.sf.robocode.battle.peer.BulletPeer;
 import net.sf.robocode.battle.peer.RobotPeer;
 import net.sf.robocode.serialization.IXmlSerializable;
 import net.sf.robocode.serialization.XmlReader;
 import net.sf.robocode.serialization.XmlWriter;
+import robocode.control.snapshot.IBonusSnapShot;
 import robocode.control.snapshot.IBulletSnapshot;
 import robocode.control.snapshot.IRobotSnapshot;
 import robocode.control.snapshot.IScoreSnapshot;
@@ -47,6 +49,10 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 	/** List of snapshots for the bullets that are currently on the battlefield */
 	private List<IBulletSnapshot> bullets;
 
+	// vodkhang@gmail.com
+	private List<IBonusSnapShot> bonuses;
+	// FINISH
+	
 	/** Current TPS (turns per second) */
 	private int tps;
 
@@ -86,7 +92,18 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 		turn = battle.getTime();
 		round = battle.getRoundNum();
 	}
-
+	
+	// vodkhang@gmail.com
+	public TurnSnapshot(Battle battle, List<RobotPeer> battleRobots, List<BulletPeer> battleBullets, 
+			List<BonusPeer>battleBonuses, boolean readoutText) {
+		this(battle, battleRobots, battleBullets, readoutText);
+		for (BonusPeer bonusPeer : battleBonuses) {
+			bonuses.add(new BonusSnapshot(bonusPeer));
+		}		
+	}
+	// FINISH
+	
+	
 	@Override
 	public String toString() {
 		return this.round + "/" + turn + " (" + this.robots.size() + ")";
@@ -106,6 +123,11 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 		return bullets.toArray(new IBulletSnapshot[bullets.size()]);
 	}
 
+	// vodkhang@gmail.com
+	public IBonusSnapShot[] getBonuses() {
+		return bonuses.toArray(new IBonusSnapShot[bonuses.size()]);
+	}
+	// FINISH
 	/**
 	 * {@inheritDoc}
 	 */

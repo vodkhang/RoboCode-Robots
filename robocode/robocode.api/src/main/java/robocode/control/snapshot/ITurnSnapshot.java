@@ -37,6 +37,8 @@ public interface ITurnSnapshot {
 	 * @return a list of snapshots for the bullets that are currently on the battlefield.
 	 */
 	IBulletSnapshot[] getBullets();
+	
+	IBonusSnapShot[] getBonuses();
 
 	/**
 	 * Returns the current TPS (turns per second).

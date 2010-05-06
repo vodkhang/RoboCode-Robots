@@ -97,6 +97,7 @@ package net.sf.robocode.battle;
 
 
 import net.sf.robocode.battle.events.BattleEventDispatcher;
+import net.sf.robocode.battle.peer.BonusPeer;
 import net.sf.robocode.battle.peer.BulletPeer;
 import net.sf.robocode.battle.peer.ContestantPeer;
 import net.sf.robocode.battle.peer.RobotPeer;
@@ -157,6 +158,11 @@ public final class Battle extends BaseBattle {
 	private final List<BulletPeer> bullets = new CopyOnWriteArrayList<BulletPeer>();
 	private int activeRobots;
 
+	// vodkhang@gmail.com
+	// we can add the bonus peer here
+	private List<BonusPeer> bonuses = new ArrayList<BonusPeer>(); 
+	// finish
+	
 	// Death events
 	private final List<RobotPeer> deathRobots = new CopyOnWriteArrayList<RobotPeer>();
 
@@ -447,9 +453,10 @@ public final class Battle extends BaseBattle {
 			robotPeer.getRobotStatistics().initialize();
 			robotPeer.startRound(waitTime);
 		}
+		
 		Logger.logMessage(""); // puts in a new-line
 
-		final ITurnSnapshot snapshot = new TurnSnapshot(this, robots, bullets, false);
+		final ITurnSnapshot snapshot = new TurnSnapshot(this, robots, bullets, bonuses, false);
 
 		eventDispatcher.onRoundStarted(new RoundStartedEvent(snapshot, getRoundNum()));
 	}
@@ -482,6 +489,14 @@ public final class Battle extends BaseBattle {
 
 		loadCommands();
 
+		// vodkhang@gmail.com
+		// we initialize the bonuses array here and pass them into turn
+		// we can initialize the bonus here, by some random magic, after some random 
+		// round we will have a new bonus is created and then after some other
+		// random, we will remove the bonus
+		updateBonuses();
+		// FINISH
+		
 		updateBullets();
 
 		updateRobots();
@@ -653,6 +668,30 @@ public final class Battle extends BaseBattle {
 		}
 	}
 
+	// vodkhang@gmail.com
+	/**
+	 * Here we will apply the bonus rule for robots, remove the all, inactive rule and then
+	 * 	generate some new rules
+	 */
+	private void updateBonuses() {
+		List<BonusPeer> inactiveBonuses = new ArrayList<BonusPeer>();
+		for (BonusPeer bonus : bonuses) {
+			bonus.decrementTimeLife();
+			if (!bonus.isActive()) {
+				inactiveBonuses.add(bonus);
+			}
+			for (RobotPeer robot : robots) {
+				bonus.applyBonusToRobot(robot);
+			}
+		}
+		bonuses.removeAll(inactiveBonuses);
+		BonusPeer newBonus = BonusPeer.createNewBonusPeer(battleRules);
+		if (newBonus != null) {
+			bonuses.add(newBonus);
+		}
+	}
+	// FINISH
+	
 	private void updateBullets() {
 		for (BulletPeer bullet : getBulletsAtRandom()) {
 			bullet.update(getRobotsAtRandom(), getBulletsAtRandom());

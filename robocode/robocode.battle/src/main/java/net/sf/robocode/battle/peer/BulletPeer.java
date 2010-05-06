@@ -85,7 +85,7 @@ public class BulletPeer {
 	// vodkhang@gmail.com
 	private double originX;
 	private double originY;
-	// Finish Modification
+	// Finish
 	
 	private double lastX;
 	private double lastY;

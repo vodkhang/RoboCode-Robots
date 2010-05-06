@@ -1509,7 +1509,11 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 			setEnergy(energy + delta, true);
 		}
 	}
-
+	
+	public void addEnergy(double additionalEnergy) {
+		energy += additionalEnergy;
+	}
+	
 	private void setEnergy(double newEnergy, boolean resetInactiveTurnCount) {
 		if (resetInactiveTurnCount && (energy != newEnergy)) {
 			battle.resetInactiveTurnCount(energy - newEnergy);
