@@ -22,7 +22,7 @@
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -31,71 +31,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" partName="BattleView.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" title="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18057" selectionTopPixel="9180"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ITurnSnapshot.java" partName="ITurnSnapshot.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java" title="ITurnSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="874" selectionTopPixel="74"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRobotSnapshot.java" partName="IRobotSnapshot.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java" title="IRobotSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1591" selectionTopPixel="1071"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Battle.java" partName="Battle.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java" title="Battle.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16410" selectionTopPixel="5593"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RobotPeer.java" partName="RobotPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java" title="RobotPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5288" selectionTopPixel="119"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BulletPeer.java" partName="BulletPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java" title="BulletPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5555" selectionTopPixel="243"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BulletSnapshot.java" partName="BulletSnapshot.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java" title="BulletSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3182" selectionTopPixel="433"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BulletState.java" partName="BulletState.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.api/src/main/java/robocode/control/snapshot/BulletState.java" title="BulletState.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/BulletState.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.api/src/main/java/robocode/control/snapshot/BulletState.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="82" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBulletSnapshot.java" partName="IBulletSnapshot.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.api/src/main/java/robocode/control/snapshot/IBulletSnapshot.java" title="IBulletSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IBulletSnapshot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.api/src/main/java/robocode/control/snapshot/IBulletSnapshot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="886" selectionTopPixel="153"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusSnapshot.java" partName="BonusSnapshot.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BonusSnapshot.java" title="BonusSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BonusSnapshot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BonusSnapshot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="649" selectionTopPixel="210"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" partName="BonusPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BonusPeer.java" title="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/BonusPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BonusPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="66" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBonusSnapShot.java" partName="IBonusSnapShot.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java" title="IBonusSnapShot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="453" selectionTopPixel="278"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
@@ -104,8 +43,8 @@
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
@@ -113,7 +52,6 @@
 <expanded>
 <category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (13 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -179,7 +117,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -242,11 +180,15 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1286c00" orientation="512" selectedTabId="org.eclipse.mylyn.tasks.ui.views.tasks" style="0">
 <fastViews>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1c2e163" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
+<fastViews>
+<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -272,13 +214,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1c2e163" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24472892" ratioLeft="325" ratioRight="1003" relationship="2" relative="left"/>
@@ -320,172 +260,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/control/snapshot/BulletState.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/control/snapshot/IBulletSnapshot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BonusSnapshot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BonusPeer.java"/>
-</editors>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="18063" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="14931" y="14"/>
-</item>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="15366" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="16152" y="13"/>
-</item>
-<item historyLabel="ITurnSnapshot.java" index="1">
-<position info="not_deleted" x="1077" y="0"/>
-</item>
-<item historyLabel="IRobotSnapshot.java" index="2">
-<position info="not_deleted" x="1591" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="20482" y="0"/>
-</item>
-<item historyLabel="ITurnSnapshot.java" index="1">
-<position info="not_deleted" x="874" y="13"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="16710" y="13"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="12918" y="6"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="16103" y="15"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="13428" y="0"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="16512" y="9"/>
-</item>
-<item historyLabel="RobotPeer.java" index="4">
-<position info="not_deleted" x="5288" y="0"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="16512" y="9"/>
-</item>
-<item historyLabel="BulletPeer.java" index="5">
-<position info="not_deleted" x="3553" y="0"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="16646" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="20482" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="0">
-<position info="not_deleted" x="18057" y="0"/>
-</item>
-<item historyLabel="BulletPeer.java" index="5">
-<position info="not_deleted" x="4717" y="0"/>
-</item>
-<item historyLabel="BulletSnapshot.java" index="6">
-<position info="not_deleted" x="1183" y="0"/>
-</item>
-<item historyLabel="BulletPeer.java" index="5">
-<position info="not_deleted" x="5385" y="0"/>
-</item>
-<item historyLabel="Battle.java" index="3">
-<position info="not_deleted" x="16410" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BulletState.java" index="8">
-<position info="not_deleted" x="82" y="0"/>
-</item>
-<item historyLabel="IBulletSnapshot.java" index="9">
-<position info="not_deleted" x="886" y="0"/>
-</item>
-<item historyLabel="BulletState.java" index="8">
-<position info="not_deleted" x="82" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="253" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="356" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="589" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="BulletState.java" index="8">
-<position info="not_deleted" x="82" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="196" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position/>
-</item>
-<item historyLabel="BulletSnapshot.java" index="6">
-<position info="not_deleted" x="4248" y="28"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="199" y="0"/>
-</item>
-<item historyLabel="BulletSnapshot.java" index="6">
-<position info="not_deleted" x="3396" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="516" y="0"/>
-</item>
-<item historyLabel="BonusPeer.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="469" y="0"/>
-</item>
-<item historyLabel="BonusPeer.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="469" y="0"/>
-</item>
-<item historyLabel="BulletPeer.java" index="5">
-<position info="not_deleted" x="5555" y="0"/>
-</item>
-<item historyLabel="BulletSnapshot.java" index="6">
-<position info="not_deleted" x="3182" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="469" y="0"/>
-</item>
-<item historyLabel="IBonusSnapShot.java" index="7">
-<position info="not_deleted" x="453" y="0"/>
-</item>
-<item historyLabel="BonusSnapshot.java" index="10">
-<position info="not_deleted" x="649" y="0"/>
-</item>
-<item active="true" historyLabel="BonusPeer.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -494,6 +269,7 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1286c00"/>
 <trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1c2e163"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -506,14 +282,41 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBonusSnapShot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java">
-<persistable path="/robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RobotPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/BonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BonusPeer.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BonusSnapshot.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BonusSnapshot.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RecordManager.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/recording/RecordManager.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/recording/RecordManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ITurnSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java">
+<persistable path="/robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Logger.java" tooltip="robocode.api/src/main/java/net/sf/robocode/io/Logger.java">
+<persistable path="/robocode.api/src/main/java/net/sf/robocode/io/Logger.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TurnSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/TurnSnapshot.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/TurnSnapshot.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Battle.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InteractiveHandler.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/InteractiveHandler.java">
+<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/InteractiveHandler.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Module.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/Module.java">
+<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBonusSnapShot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java">
+<persistable path="/robocode.api/src/main/java/robocode/control/snapshot/IBonusSnapShot.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleRules.java" tooltip="robocode.api/src/main/java/robocode/BattleRules.java">
+<persistable path="/robocode.api/src/main/java/robocode/BattleRules.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBulletSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IBulletSnapshot.java">
 <persistable path="/robocode.api/src/main/java/robocode/control/snapshot/IBulletSnapshot.java"/>
@@ -523,33 +326,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BulletSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/BulletSnapshot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BulletPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/BulletPeer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RobotPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/RobotPeer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Battle.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRobotSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java">
-<persistable path="/robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ITurnSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java">
-<persistable path="/robocode.api/src/main/java/robocode/control/snapshot/ITurnSnapshot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdvancedRobot.java" tooltip="robocode.api/src/main/java/robocode/AdvancedRobot.java">
-<persistable path="/robocode.api/src/main/java/robocode/AdvancedRobot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRobotPeerBattle.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/IRobotPeerBattle.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/IRobotPeerBattle.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TeamPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/TeamPeer.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/TeamPeer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TurnSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/TurnSnapshot.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/TurnSnapshot.java"/>
 </file>
 </mruList>
 </workbench>

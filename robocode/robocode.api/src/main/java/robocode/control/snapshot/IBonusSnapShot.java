@@ -31,11 +31,11 @@ public interface IBonusSnapShot {
 	 */
 	public String getImageName();
 	/**
-	 * @deprecated
+	 * 
 	 * Used for temprorarily only, be careful yourself
 	 * @return the shape to draw
 	 */
-	public Shape getShape();
+//	public Shape getShape();
 
 }
 //FINISH

@@ -6,7 +6,7 @@ import java.util.Random;
 
 import robocode.BattleRules;
 
-import net.sf.robocode.battle.Battle;
+
 // TODO: we can add a bonusID so that we can easily perform searching or sorting here
 public class BonusPeer {
 	enum BonusPeerType {
@@ -17,12 +17,13 @@ public class BonusPeer {
 	}
 	private double x;
 	private double y;
-	private static final int ADDITION_ENERGY = 50;
-	private static final int STANDARD_TIME_LIFE = 30;
-	private static final double STANDARD_RADIUS = 3;
+	private static final int ADDITION_ENERGY = 200;
+	private static final int RANDOM_RATE = 60;
+	private static final int STANDARD_TIME_LIFE = 100;
+	private static final double STANDARD_RADIUS = 50;
 	private String name;
 	private String imageName;
-	private Shape shape;
+//	private Shape shape;
 	private BonusPeerType type;
 	private int timeLife;
 	public BonusPeer(double x, double y, BonusPeerType type) {
@@ -30,6 +31,7 @@ public class BonusPeer {
 		this.y = y;
 		this.type = type;
 		generateProperties(type);		
+//		System.out.println("BonusPeer - constructor: " + this);
 	}
 	
 	public void decrementTimeLife() {
@@ -42,14 +44,16 @@ public class BonusPeer {
 	 * @return is Active or not
 	 */
 	public boolean isActive() {
-		return timeLife == 0;
+		return timeLife > 0;
 	}
 	
 	public double getX() {
 		return x;
 	}
 
-
+	public BonusPeerType getType() {
+		return type;
+	}
 
 	public double getY() {
 		return y;
@@ -67,23 +71,27 @@ public class BonusPeer {
 		return imageName;
 	}
 
-	public Shape getShape() {
-		return shape;
+//	public Shape getShape() {
+//		return shape;
+//	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "x: " + x + " y: " + y + " name: " + name + " timeLife " + timeLife;
 	}
-
 	private void generateProperties(BonusPeerType type) {
 		switch (type) {
 			case HealthIncrease :
-				name = "Health Bonus";
-				imageName = "health_increase.jpg";
-				shape = new Ellipse2D.Double(x, y, STANDARD_RADIUS, STANDARD_RADIUS);
+				name = "Health";
+				imageName = "health_increase.jpg";				
 				timeLife = STANDARD_TIME_LIFE;
+				break;
 			default:
 				System.out.println("Not support yet");
 		}
 	}
 	public static BonusPeer createNewBonusPeer(BattleRules battleRules) {
-		int random = new Random().nextInt(10);
+		int random = new Random().nextInt(RANDOM_RATE);
 		// we will only create a bonus peer on one-quarter probability
 		if (random != 0) {
 			return null;
@@ -93,17 +101,20 @@ public class BonusPeer {
 		double y = new Random().nextDouble() * battleRules.getBattlefieldHeight();
 		return new BonusPeer(x, y, BonusPeerType.HealthIncrease);
 	}
-	public void applyBonusToRobot(RobotPeer robot) {
-		boolean isInXArea = x - STANDARD_RADIUS < robot.getX() && x + STANDARD_RADIUS > robot.getX();
-		boolean isInYArea = y - STANDARD_RADIUS < robot.getY() && y + STANDARD_RADIUS > robot.getY();
+	public boolean applyBonusToRobot(RobotPeer robot) {		
+		boolean isInXArea = (x - STANDARD_RADIUS < robot.getX()) && (x + STANDARD_RADIUS > robot.getX());
+		boolean isInYArea = (y - STANDARD_RADIUS < robot.getY()) && (y + STANDARD_RADIUS > robot.getY());
 		if (!isInXArea || !isInYArea) {
-			return;
+			return false;
 		}
 		switch (type) {
 			case HealthIncrease:
 				robot.addEnergy(ADDITION_ENERGY);
+				timeLife = -1;
+				return true;
 			default:
 				System.out.println("We did not implement other types");
+				return true;
 		}
 	}
 }

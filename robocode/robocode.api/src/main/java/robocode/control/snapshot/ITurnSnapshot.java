@@ -13,6 +13,8 @@
  *******************************************************************************/
 package robocode.control.snapshot;
 
+import java.util.Collection;
+
 
 /**
  * Interface of a battle turn snapshot at a specific time instant in a battle.
@@ -38,7 +40,10 @@ public interface ITurnSnapshot {
 	 */
 	IBulletSnapshot[] getBullets();
 	
-	IBonusSnapShot[] getBonuses();
+	// vodkhang@gmail.com
+	Collection<IBonusSnapShot> getBonuses();
+	// FINISH
+	
 
 	/**
 	 * Returns the current TPS (turns per second).

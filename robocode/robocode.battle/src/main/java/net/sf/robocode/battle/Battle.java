@@ -455,9 +455,10 @@ public final class Battle extends BaseBattle {
 		}
 		
 		Logger.logMessage(""); // puts in a new-line
-
+		// vodkhang@gmail.com
 		final ITurnSnapshot snapshot = new TurnSnapshot(this, robots, bullets, bonuses, false);
-
+		// FINISH
+//		System.out.println("Battle, init round, bonuses: " + snapshot.getBonuses());
 		eventDispatcher.onRoundStarted(new RoundStartedEvent(snapshot, getRoundNum()));
 	}
 
@@ -585,7 +586,7 @@ public final class Battle extends BaseBattle {
 
 	@Override
 	protected void finalizeTurn() {
-		eventDispatcher.onTurnEnded(new TurnEndedEvent(new TurnSnapshot(this, robots, bullets, true)));
+		eventDispatcher.onTurnEnded(new TurnEndedEvent(new TurnSnapshot(this, robots, bullets, bonuses, true)));
 
 		super.finalizeTurn();
 	}
@@ -676,19 +677,21 @@ public final class Battle extends BaseBattle {
 	private void updateBonuses() {
 		List<BonusPeer> inactiveBonuses = new ArrayList<BonusPeer>();
 		for (BonusPeer bonus : bonuses) {
+			for (RobotPeer robot : getRobotsAtRandom()) {
+				if (bonus.applyBonusToRobot(robot)) {
+					break;
+				}
+			}
 			bonus.decrementTimeLife();
 			if (!bonus.isActive()) {
-				inactiveBonuses.add(bonus);
-			}
-			for (RobotPeer robot : robots) {
-				bonus.applyBonusToRobot(robot);
+				inactiveBonuses.add(bonus);				
 			}
 		}
 		bonuses.removeAll(inactiveBonuses);
 		BonusPeer newBonus = BonusPeer.createNewBonusPeer(battleRules);
 		if (newBonus != null) {
 			bonuses.add(newBonus);
-		}
+		}		
 	}
 	// FINISH
 	

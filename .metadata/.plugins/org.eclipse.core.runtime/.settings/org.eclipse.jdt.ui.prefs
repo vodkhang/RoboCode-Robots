@@ -1,4 +1,4 @@
-#Thu May 06 10:58:08 ICT 2010
+#Fri May 07 09:00:45 ICT 2010
 sourceHoverBackgroundColor=255,255,225
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
@@ -19,5 +19,5 @@ org.eclipse.jdt.ui.formatterprofiles.version=11
 content_assist_number_of_computers=16
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="khang's signature" enabled\="true" name\="sign">// vodkhang@gmail.com&\#13;\r\n// FINISH</template></templates>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.Shape"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.awt.geom.Area"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.awt.Stroke"><rhs name\="java.awt.BasicStroke"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.Shape"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.awt.geom.Area"><rhs name\="java.awt.geom.Area"/></lhs><lhs name\="java.awt.Stroke"><rhs name\="java.awt.BasicStroke"/></lhs><lhs name\="net.sf.robocode.battle.peer.BonusPeer"><rhs name\="net.sf.robocode.battle.peer.BonusPeer"/></lhs><lhs name\="java.lang.Enum"><rhs name\="net.sf.robocode.battle.peer.BonusPeer$BonusPeerType"/></lhs><lhs name\="net.sf.robocode.battle.peer.BonusPeer$BonusPeerType"><rhs name\="net.sf.robocode.battle.peer.BonusPeer$BonusPeerType"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="robocode.control.snapshot.IBonusSnapShot"><rhs name\="net.sf.robocode.battle.snapshot.BonusSnapshot"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.awt.Paint"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Transparency"><rhs name\="java.awt.Color"/></lhs><lhs name\="java.awt.Color"><rhs name\="java.awt.Color"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

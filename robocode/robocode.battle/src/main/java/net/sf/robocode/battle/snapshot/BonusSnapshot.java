@@ -14,7 +14,7 @@ public class BonusSnapshot implements IBonusSnapShot{
 	private String name;
 	
 	// shape of the bonus
-	private Shape shape;
+	//private Shape shape;	
 	
 	// coordinate of the bonus
 	private double x;	
@@ -25,7 +25,7 @@ public class BonusSnapshot implements IBonusSnapShot{
 		y = bonusPeer.getY();
 		name = bonusPeer.getName();
 		imageName = bonusPeer.getImageName();
-		shape = bonusPeer.getShape();
+		//shape = bonusPeer.getShape();
 	}
 	/**
 	 * {@inheritDoc}
@@ -40,10 +40,10 @@ public class BonusSnapshot implements IBonusSnapShot{
 		return name;
 	}
 
-	public Shape getShape() {
-		// TODO Auto-generated method stub
-		return shape;
-	}
+//	public Shape getShape() {
+//		// TODO Auto-generated method stub
+//		return shape;
+//	}
 
 	public double getX() {
 		// TODO Auto-generated method stub
@@ -54,6 +54,10 @@ public class BonusSnapshot implements IBonusSnapShot{
 		// TODO Auto-generated method stub
 		return y;
 	}
-	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "x: " + x + " y: " + " name: " + name;
+	}
 }
 //FINISH

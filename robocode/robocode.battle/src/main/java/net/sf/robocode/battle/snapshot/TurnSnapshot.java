@@ -50,7 +50,7 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 	private List<IBulletSnapshot> bullets;
 
 	// vodkhang@gmail.com
-	private List<IBonusSnapShot> bonuses;
+	private List<IBonusSnapShot> bonuses = new ArrayList<IBonusSnapShot>();
 	// FINISH
 	
 	/** Current TPS (turns per second) */
@@ -124,8 +124,9 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 	}
 
 	// vodkhang@gmail.com
-	public IBonusSnapShot[] getBonuses() {
-		return bonuses.toArray(new IBonusSnapShot[bonuses.size()]);
+	public Collection<IBonusSnapShot> getBonuses() {
+		//System.out.println("TurnSnapshot, bonuses: " + bonuses);		
+		return bonuses;
 	}
 	// FINISH
 	/**

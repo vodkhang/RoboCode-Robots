@@ -17,6 +17,7 @@ package net.sf.robocode.ui.battleview;
 
 
 import net.sf.robocode.battle.snapshot.RobotSnapshot;
+import net.sf.robocode.io.Logger;
 import net.sf.robocode.robotpaint.Graphics2DSerialized;
 import net.sf.robocode.robotpaint.IGraphicsProxy;
 import net.sf.robocode.settings.ISettingsManager;
@@ -32,6 +33,7 @@ import robocode.control.events.BattleFinishedEvent;
 import robocode.control.events.BattleStartedEvent;
 import robocode.control.events.TurnEndedEvent;
 import robocode.control.snapshot.BulletState;
+import robocode.control.snapshot.IBonusSnapShot;
 import robocode.control.snapshot.IBulletSnapshot;
 import robocode.control.snapshot.IRobotSnapshot;
 import robocode.control.snapshot.ITurnSnapshot;
@@ -561,17 +563,10 @@ public class BattleView extends Canvas {
 				// vodkhang@gmail.com
 				
 				// BEGIN
-				// Try to scale the bullet to see it more clearly. I will add the rectangle at runtime because
-				//	we need to do some with heading			
-
 				// because the shape orientation is 90 degrees relative to the snapshot heading
-				double heading = bulletSnapShot.getHeading() + Math.PI/2;			
-				
-				//Shape shape = new Line2D.Double(0, 0, orientedHorizon, orientedVertical);
-				Shape shape = new Rectangle2D.Double(0, -0.25, 5, 0.5);				
-//				Shape circleShape = new Ellipse2D.Double(-0.5, -0.5, 1, 1);
-				BULLET_AREA.add(new Area(shape));
-				//BULLET_AREA.add(new Area(circleShape));				
+				double heading = bulletSnapShot.getHeading() + Math.PI/2;				
+				Shape shape = new Rectangle2D.Double(0, -0.25, 5, 0.5);		
+				BULLET_AREA.add(new Area(shape));				
 				if (bulletSnapShot.getPower() < 2) {
 					scale *= 2;
 				} else {
@@ -579,8 +574,7 @@ public class BattleView extends Canvas {
 				}
 				
 				at.scale(scale, scale);
-				at.rotate(heading);				
-				
+				at.rotate(heading);			
 
 				// FINISH
 				
@@ -594,15 +588,7 @@ public class BattleView extends Canvas {
 					bulletColor = new Color(bulletSnapShot.getColor());
 				}
 				g.setColor(bulletColor);
-				g.fill(bulletArea);
-				
-//				// vodkhang@gmail.com, put the draw line here to have color
-//				g.drawLine((int)bulletSnapShot.getOriginX(), 
-//						battleField.getHeight() - (int)bulletSnapShot.getOriginY(), 
-//						(int)bulletSnapShot.getPaintX(), 
-//						battleField.getHeight() - (int)bulletSnapShot.getPaintY());
-//				// FINISH
-				
+				g.fill(bulletArea);	
 			} else if (drawExplosions) {
 				if (!bulletSnapShot.isExplosion()) {
 					double scale = sqrt(1000 * bulletSnapShot.getPower()) / 128;
@@ -617,11 +603,40 @@ public class BattleView extends Canvas {
 				explosionRenderImage.paint(g);
 			}
 		}
+		g.setClip(savedClip);		
+	}
+	// vodkhang@gmail.com
+	private void drawBonuses(Graphics2D g, ITurnSnapshot snapShot) {
+		final Shape savedClip = g.getClip();
+		g.setClip(null);		
+		// main part to add the bonus shape into
+		for (IBonusSnapShot bonusSnapShot : snapShot.getBonuses()) {			
+			double x, y;
+			x = bonusSnapShot.getX();
+			
+			y = battleField.getHeight() - bonusSnapShot.getY();
+			//AffineTransform at = AffineTransform.getTranslateInstance(x, y);
+			// BEGIN
+			Shape shape = new Ellipse2D.Double(x, y, 50, 50);			
+//			Area bonusArea = new Area(shape);
+//			int scale = 2;
+//			at.scale(scale, scale);					
+//			// FINISH			
+//			Shape bonusArea2 = bonusArea.createTransformedArea(at);
+//			System.out.println("bonus area 2: " + bonusArea2);
+			Color bonusColor = Color.YELLOW;
+			g.setColor(bonusColor);
+			g.fill(shape);
+			//g.draw(shape);
+			g.drawString(bonusSnapShot.getName(), (int)x, (int)y);
+						
+//			g.drawLine(0, 0, (int)x, (int)y);
+			//System.out.println("Battle View, drawBonuses, graphics: " + g);
+		}
 		g.setClip(savedClip);
 	}
-	private void drawBonuses(Graphics2D g, ITurnSnapshot snapShot) {
-		
-	}
+	// FINISH
+	
 	private void centerString(Graphics2D g, String s, int x, int y, Font font, FontMetrics fm) {
 		g.setFont(font);
 
