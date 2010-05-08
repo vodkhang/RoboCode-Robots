@@ -35,5 +35,5 @@ public interface IImageManager {
 
 	RenderImage getColoredRadarRenderImage(Integer color);
 	
-	RenderImage getBonusRenderImage(String fileName);
+	RenderImage getBonusRenderImage(String fileName, int frameNumber);
 }

@@ -1,6 +1,8 @@
-package net.sf.robocode.battle.peer;
+package net.sf.robocode.battle.peer.bonus;
 
 import java.util.Random;
+
+import net.sf.robocode.battle.peer.RobotPeer;
 
 import robocode.BattleRules;
 
@@ -10,22 +12,31 @@ public abstract class BonusPeer implements IBonusPeer {
 	enum BonusPeerType {
 		BonusHealth,
 		BonusPoison,
-		PowerIncrease,
-		PowerDecrease
+		BonusStrong,
+		BonusWeak
 	}
 	protected double x;
 	protected double y;
+	protected int numberOfImages = 1;
 	private static final int RANDOM_RATE = 100;
 	protected String name;
 	protected String imageFileName;
 	protected int timeLife;
-	public BonusPeer(double x, double y) {
+	private int imageIndex = 0;
+	public BonusPeer(double x, double y, String name, String imageFileName, int timeLife) {
 		this.x = x;
 		this.y = y;		
+		this.name = name;
+		this.imageFileName = imageFileName;
+		this.timeLife = timeLife;
 	}
 	
 	public void decrementTimeLife() {
 		timeLife --;
+	}
+	public int getImageIndex() {
+		// TODO Auto-generated method stub
+		return imageIndex ++ % numberOfImages;
 	}
 	
 	/**
@@ -61,7 +72,7 @@ public abstract class BonusPeer implements IBonusPeer {
 		if (random != 0) {
 			return null;
 		}
-		int randomBonus = new Random().nextInt(2);
+		int randomBonus = new Random().nextInt(BonusPeerType.values().length);
 
 		//int random = new Random().nextInt(BonusPeerType.values().length);		
 		double x = new Random().nextDouble() * battleRules.getBattlefieldWidth();
@@ -72,6 +83,10 @@ public abstract class BonusPeer implements IBonusPeer {
 				return new HealthBonusPeer(x, y);
 			case BonusPoison :
 				return new PoisonBonusPeer(x, y);
+			case BonusStrong :
+				return new StrongBonusPeer(x, y);
+			case BonusWeak :
+				return new WeakBonusPeer(x, y);
 			default:
 				System.out.println("The random type is invalid");
 				return null;

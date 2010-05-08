@@ -4,142 +4,18 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
-	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
-		<item value="true" key="group_libraries"/>
-		<item value="false" key="linkWithEditor"/>
-		<item value="2" key="layout"/>
-		<item value="1" key="rootMode"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;" key="memento"/>
+	<section name="SelfEncapsulateFieldWizard">
+		<item value="true" key="GenerateJavadoc"/>
 	</section>
-	<section name="completion_proposal_size">
-	</section>
-	<section name="JavaElementSearchActions">
+	<section name="RefactoringWizard.preview">
+		<item value="410" key="height"/>
+		<item value="610" key="width"/>
 	</section>
 	<section name="JavaSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="15" key="INCLUDE_MASK"/>
 		<item value="12" key="HISTORY_SIZE"/>
 		<section name="HISTORY11">
-			<item value="9" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="setPreferredSize" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="1" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY2">
-			<item value="15" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="ITurnSnapshot" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY3">
-			<item value="15" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="AdvancedRobot" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY0">
-			<item value="15" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="TurnSnapshot" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="3" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY10">
-			<item value="9" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="BulletCommand" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY1">
-			<item value="15" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="BattleView" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY9">
-			<item value="9" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="IBattleListener" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY8">
-			<item value="9" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="implements IBattleListener" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY5">
-			<item value="15" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="Area" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY4">
-			<item value="15" key="includeMask"/>
-			<item value="2" key="limitTo"/>
-			<item value="0" key="scope"/>
-			<item value="" key="javaElement"/>
-			<item value="IBulletSnapshot" key="pattern"/>
-			<item value="0" key="matchLocations"/>
-			<item value="0" key="searchFor"/>
-			<item value="false" key="isCaseSensitive"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY7">
 			<item value="9" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
@@ -151,7 +27,43 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY6">
+		<section name="HISTORY2">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="getExplosionRenderImage" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="1" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="IImageManager" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY0">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="BattleView" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY10">
 			<item value="15" key="includeMask"/>
 			<item value="2" key="limitTo"/>
 			<item value="0" key="scope"/>
@@ -163,8 +75,90 @@
 			<list key="workingSets">
 			</list>
 		</section>
-	</section>
-	<section name="RenameInformationPopup">
+		<section name="HISTORY1">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="ImageManager" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="Area" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY8">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="IBulletSnapshot" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY5">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="TurnSnapshot" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="3" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="BonusPeer" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY7">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="AdvancedRobot" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item value="15" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="" key="javaElement"/>
+			<item value="ITurnSnapshot" key="pattern"/>
+			<item value="0" key="matchLocations"/>
+			<item value="0" key="searchFor"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="Comments"/>
@@ -172,19 +166,39 @@
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
-	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">
-		<item value="false" key="GoIntoTopLevelTypeAction.isChecked"/>
-		<item value="true" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_SIZE"/>
-		<item value="400" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_WIDTH"/>
-		<item value="320" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_HEIGHT"/>
-		<item value="false" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
-	</section>
 	<section name="org.eclipse.jdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
 		<item value="609" key="DIALOG_WIDTH"/>
 		<item value="64" key="DIALOG_Y_ORIGIN"/>
 		<item value="330" key="DIALOG_HEIGHT"/>
 		<item value="48" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item value="true" key="group_libraries"/>
+		<item value="false" key="linkWithEditor"/>
+		<item value="2" key="layout"/>
+		<item value="1" key="rootMode"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;" key="memento"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="JavaElementSearchActions">
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
+		<item value="false" key="updateTextualMatches"/>
+		<item value="false" key="updateSimilarElements"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">
+		<item value="false" key="GoIntoTopLevelTypeAction.isChecked"/>
+		<item value="true" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="400" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_WIDTH"/>
+		<item value="320" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_HEIGHT"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="RemoveFinal"/>

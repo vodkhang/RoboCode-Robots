@@ -2,8 +2,8 @@ package net.sf.robocode.battle.snapshot;
 
 import java.awt.Shape;
 
-import net.sf.robocode.battle.peer.BonusPeer;
-import net.sf.robocode.battle.peer.IBonusPeer;
+import net.sf.robocode.battle.peer.bonus.BonusPeer;
+import net.sf.robocode.battle.peer.bonus.IBonusPeer;
 
 import robocode.control.snapshot.IBonusSnapShot;
 // vodkhang@gmail.com
@@ -21,11 +21,13 @@ public class BonusSnapshot implements IBonusSnapShot{
 	private double x;	
 	private double y;
 	
+	private int imageIndex;
 	public BonusSnapshot (IBonusPeer bonusPeer) {
 		x = bonusPeer.getX();
 		y = bonusPeer.getY();
 		name = bonusPeer.getName();
 		imageName = bonusPeer.getImageFileName();
+		imageIndex = bonusPeer.getImageIndex();
 		//shape = bonusPeer.getShape();
 	}
 	/**
@@ -54,6 +56,9 @@ public class BonusSnapshot implements IBonusSnapShot{
 	public double getY() {
 		// TODO Auto-generated method stub
 		return y;
+	}
+	public int getImageIndex() {
+		return imageIndex;
 	}
 	@Override
 	public String toString() {

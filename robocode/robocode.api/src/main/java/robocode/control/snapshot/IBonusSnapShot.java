@@ -36,6 +36,6 @@ public interface IBonusSnapShot {
 	 * @return the shape to draw
 	 */
 //	public Shape getShape();
-
+	int getImageIndex();
 }
 //FINISH

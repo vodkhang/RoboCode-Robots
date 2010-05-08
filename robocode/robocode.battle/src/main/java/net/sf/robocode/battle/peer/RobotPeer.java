@@ -190,6 +190,12 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 	private final BoundingRectangle boundingBox;
 	private final RbSerializer rbSerializer;
 
+	// vodkhang@gmail.com
+	// Here is the factor to decide the bullet power to increase up or down. Default will be one
+	private double bulletPowerFactor = 1;
+	// FINISH
+	
+	
 	public RobotPeer(Battle battle, IHostManager hostManager, RobotSpecification robotSpecification, int duplicate, TeamPeer team, int index, int contestantIndex) {
 		super();
 		if (team != null) {
@@ -315,7 +321,16 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 	public int getContestIndex() {
 		return statics.getContestIndex();
 	}
+	// vodkhang@gmail.com
 
+	// -------------------
+	// bonus
+	// -------------------
+	public void setBulletPowerFactor(double factor) {
+		bulletPowerFactor = factor;
+	}	
+	// FINISH
+	
 	// -------------------
 	// status 
 	// -------------------
@@ -850,8 +865,13 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 			gunHeat += Rules.getGunHeat(firePower);
 
 			newBullet = new BulletPeer(this, battleRules, bulletCmd.getBulletId());
-
+			// vodkhang@gmail.com
+			// We may need to change here to make the power stronger
+			//newBullet.setPower(firePower);
 			newBullet.setPower(firePower);
+			newBullet.setBulletPowerFactor(bulletPowerFactor);
+			// FINISH
+			
 			if (!turnedRadarWithGun || !bulletCmd.isFireAssistValid() || statics.isAdvancedRobot()) {
 				newBullet.setHeading(gunHeading);
 			} else {
@@ -1508,10 +1528,6 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 		if ((!isExecFinishedAndDisabled && !isEnergyDrained) || delta < 0) {
 			setEnergy(energy + delta, true);
 		}
-	}
-	
-	public void addEnergy(double additionalEnergy) {
-		energy += additionalEnergy;
 	}
 	
 	private void setEnergy(double newEnergy, boolean resetInactiveTurnCount) {

@@ -85,6 +85,7 @@ public class BulletPeer {
 	// vodkhang@gmail.com
 	private double originX;
 	private double originY;
+	private double bulletPowerFactor;
 	// Finish
 	
 	private double lastX;
@@ -162,6 +163,10 @@ public class BulletPeer {
 		for (RobotPeer otherRobot : robots) {
 			if (!(otherRobot == null || otherRobot == owner || otherRobot.isDead())
 					&& otherRobot.getBoundingBox().intersectsLine(boundingLine)) {
+				// vodkhang@gmail.com				
+				// increase the power by a factor
+				power = power * bulletPowerFactor;
+				// FINISH
 				double damage = Rules.getBulletDamage(power);
 
 				double score = damage;
@@ -321,7 +326,16 @@ public class BulletPeer {
 	public void setY(double newY) {
 		y = lastY = newY;
 	}
+	// vodkhang@gmail.com
 
+	/**
+	 * @param bulletPowerFactor the bulletPowerFactor to set
+	 */
+	public void setBulletPowerFactor(double bulletPowerFactor) {
+		this.bulletPowerFactor = bulletPowerFactor;
+	}
+	// FINISH
+	
 	public void setState(BulletState newState) {
 		state = newState;
 	}

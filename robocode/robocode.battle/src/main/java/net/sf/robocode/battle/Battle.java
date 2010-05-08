@@ -97,12 +97,12 @@ package net.sf.robocode.battle;
 
 
 import net.sf.robocode.battle.events.BattleEventDispatcher;
-import net.sf.robocode.battle.peer.BonusPeer;
 import net.sf.robocode.battle.peer.BulletPeer;
 import net.sf.robocode.battle.peer.ContestantPeer;
-import net.sf.robocode.battle.peer.IBonusPeer;
 import net.sf.robocode.battle.peer.RobotPeer;
 import net.sf.robocode.battle.peer.TeamPeer;
+import net.sf.robocode.battle.peer.bonus.BonusPeer;
+import net.sf.robocode.battle.peer.bonus.IBonusPeer;
 import net.sf.robocode.battle.snapshot.TurnSnapshot;
 import net.sf.robocode.host.ICpuManager;
 import net.sf.robocode.host.IHostManager;
@@ -161,7 +161,10 @@ public final class Battle extends BaseBattle {
 
 	// vodkhang@gmail.com
 	// we can add the bonus peer here
-	private List<IBonusPeer> bonuses = new ArrayList<IBonusPeer>(); 
+	// activeBonuses are bonuses are being drawn
+	// affectingBonuses are bonuses which are affecting on robots but will not be drawn on the screen
+	private List<IBonusPeer> activeBonuses = new ArrayList<IBonusPeer>(); 
+	private List<IBonusPeer> affectingBonuses = new ArrayList<IBonusPeer>();
 	// finish
 	
 	// Death events
@@ -457,9 +460,8 @@ public final class Battle extends BaseBattle {
 		
 		Logger.logMessage(""); // puts in a new-line
 		// vodkhang@gmail.com
-		final ITurnSnapshot snapshot = new TurnSnapshot(this, robots, bullets, bonuses, false);
+		final ITurnSnapshot snapshot = new TurnSnapshot(this, robots, bullets, activeBonuses, false);
 		// FINISH
-//		System.out.println("Battle, init round, bonuses: " + snapshot.getBonuses());
 		eventDispatcher.onRoundStarted(new RoundStartedEvent(snapshot, getRoundNum()));
 	}
 
@@ -587,7 +589,7 @@ public final class Battle extends BaseBattle {
 
 	@Override
 	protected void finalizeTurn() {
-		eventDispatcher.onTurnEnded(new TurnEndedEvent(new TurnSnapshot(this, robots, bullets, bonuses, true)));
+		eventDispatcher.onTurnEnded(new TurnEndedEvent(new TurnSnapshot(this, robots, bullets, activeBonuses, true)));
 
 		super.finalizeTurn();
 	}
@@ -676,9 +678,10 @@ public final class Battle extends BaseBattle {
 	 * 	generate some new rules
 	 */
 	private void updateBonuses() {
-		List<IBonusPeer> inactiveBonuses = new ArrayList<IBonusPeer>();
-		for (IBonusPeer bonus : bonuses) {
-//			Collection<RobotPeer> randomRobots = getRobotsAtRandom(); 
+		Collection<IBonusPeer> inactiveBonuses = new ArrayList<IBonusPeer>();
+		// loop through all the active bonus and decrement its time life
+		// also apply the bonus to robot if possible
+		for (IBonusPeer bonus : activeBonuses) {
 			for (RobotPeer robot : robots) {
 				if (bonus.applyBonusToRobot(robot)) {
 					break;
@@ -686,14 +689,31 @@ public final class Battle extends BaseBattle {
 			}
 			bonus.decrementTimeLife();
 			if (!bonus.isActive()) {
-				inactiveBonuses.add(bonus);				
-			}
+				inactiveBonuses.add(bonus);
+				if (bonus.isAffecting()) {
+					affectingBonuses.add(bonus);
+				} 							
+			} 
 		}
-		bonuses.removeAll(inactiveBonuses);
+		activeBonuses.removeAll(inactiveBonuses);
+		
+		// generate new bonus
 		IBonusPeer newBonus = BonusPeer.createNewBonusPeer(battleRules);
 		if (newBonus != null) {
-			bonuses.add(newBonus);
-		}		
+			activeBonuses.add(newBonus);
+		}
+		
+		// apply the affect robot and remove inaffect ones
+		Collection<IBonusPeer> outOfAffectBonuses = new ArrayList<IBonusPeer>();
+		for (IBonusPeer bonus : affectingBonuses) {
+			bonus.affect();
+			bonus.decrementTimeLife();
+			if (!bonus.isAffecting()) {
+				outOfAffectBonuses.add(bonus);
+				bonus.inaffect();
+			}
+		}
+		affectingBonuses.removeAll(outOfAffectBonuses);
 	}
 	// FINISH
 	

@@ -1,4 +1,6 @@
-package net.sf.robocode.battle.peer;
+package net.sf.robocode.battle.peer.bonus;
+
+import net.sf.robocode.battle.peer.RobotPeer;
 
 /**
  * An interface over all kinds of Bonuses like Health Bonus, Poision Bonus, Strong Bonus, Weak Bonus
@@ -14,9 +16,14 @@ public interface IBonusPeer {
 	
 	boolean isActive();
 	
+	boolean isAffecting();
+	
 	String getName();
 	
 	String getImageFileName();
+	int getImageIndex();
+	boolean applyBonusToRobot(RobotPeer robot);
 	
-	public boolean applyBonusToRobot(RobotPeer robot);
+	void affect(); // used for long time affect on robot
+	void inaffect(); // used for stop affecting
 }

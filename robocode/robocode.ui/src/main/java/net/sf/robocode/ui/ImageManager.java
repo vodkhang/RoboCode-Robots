@@ -117,7 +117,6 @@ public class ImageManager implements IImageManager {
 						}
 						break;
 					}
-
 					frames.add(new RenderImage(getImage(filename)));
 				}
 			}
@@ -216,14 +215,27 @@ public class ImageManager implements IImageManager {
 		}
 		return img;
 	}
-
-	public RenderImage getBonusRenderImage(String fileName) {
-		if (bonusImageCache.containsKey(fileName)) {
-			return bonusImageCache.get(fileName);			
+	// vodkhang@gmail.com
+	/**
+	 * Here, we assume that the file is always in the .png type
+	 */
+	public RenderImage getBonusRenderImage(String fileName, int frameNumber) {
+		String realName = fileName + "-" + frameNumber;
+		RenderImage img = null;
+		try {
+			 img = bonusImageCache.get(realName);
+		} catch (NullPointerException ex) {			
 		}
-		String longPathName = "/net/sf/robocode/ui/images/bonus/" + fileName;		
-		return new RenderImage(getImage(longPathName));
+		if (img != null) {
+			return img;
+		}		
+		String longPathName = "/net/sf/robocode/ui/images/bonus/" + realName + ".png";	
+		img = new RenderImage(getImage(longPathName));
+		bonusImageCache.put(realName, img);			
+		return img;
 	}
+	// FINISH
+	
 	/**
 	 * Class used for caching rendered robot parts in various colors.
 	 *

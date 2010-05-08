@@ -615,9 +615,9 @@ public class BattleView extends Canvas {
 			x = bonusSnapShot.getX();
 			y = battleField.getHeight() - bonusSnapShot.getY();
 			AffineTransform at = AffineTransform.getTranslateInstance(x, y);
-			RenderImage bonusRenderImage = imageManager.getBonusRenderImage(bonusSnapShot.getImageFileName());				
+			RenderImage bonusRenderImage = imageManager.getBonusRenderImage
+				(bonusSnapShot.getImageFileName(), bonusSnapShot.getImageIndex());				
 			bonusRenderImage.setTransform(at);
-			g.drawString(bonusSnapShot.getName(), (int)x, (int)y + 50);
 			bonusRenderImage.paint(g);			
 		}
 		g.setClip(savedClip);
