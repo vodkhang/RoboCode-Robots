@@ -1,7 +1,5 @@
 package net.sf.robocode.battle.peer;
 
-import java.awt.Shape;
-import java.awt.geom.Ellipse2D;
 import java.util.Random;
 
 import robocode.BattleRules;
@@ -10,14 +8,14 @@ import robocode.BattleRules;
 // TODO: we can add a bonusID so that we can easily perform searching or sorting here
 public abstract class BonusPeer implements IBonusPeer {
 	enum BonusPeerType {
-		HealthIncrease,
-		HealthDecrease,
+		BonusHealth,
+		BonusPoison,
 		PowerIncrease,
 		PowerDecrease
 	}
 	protected double x;
 	protected double y;
-	private static final int RANDOM_RATE = 60;
+	private static final int RANDOM_RATE = 100;
 	protected String name;
 	protected String imageFileName;
 	protected int timeLife;
@@ -63,12 +61,30 @@ public abstract class BonusPeer implements IBonusPeer {
 		if (random != 0) {
 			return null;
 		}
+		int randomBonus = new Random().nextInt(2);
+
 		//int random = new Random().nextInt(BonusPeerType.values().length);		
 		double x = new Random().nextDouble() * battleRules.getBattlefieldWidth();
 		double y = new Random().nextDouble() * battleRules.getBattlefieldHeight();
-		return new HealthBonusPeer(x, y);
+		BonusPeerType type = BonusPeerType.values()[randomBonus];
+		switch (type) {
+			case BonusHealth : 
+				return new HealthBonusPeer(x, y);
+			case BonusPoison :
+				return new PoisonBonusPeer(x, y);
+			default:
+				System.out.println("The random type is invalid");
+				return null;
+		}
 	}
-
+	protected boolean isRobotInRange(RobotPeer robot, int affectedRadius) {
+		boolean isInXArea = (x - affectedRadius < robot.getX()) && (x + affectedRadius > robot.getX());
+		boolean isInYArea = (y - affectedRadius < robot.getY()) && (y + affectedRadius > robot.getY());
+		if (!isInXArea || !isInYArea) {
+			return false;
+		}
+		return true;
+	}
 	public String getImageFileName() {
 		// TODO Auto-generated method stub
 		return imageFileName;

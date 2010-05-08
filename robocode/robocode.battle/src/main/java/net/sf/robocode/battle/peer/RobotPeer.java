@@ -1511,9 +1511,7 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 	}
 	
 	public void addEnergy(double additionalEnergy) {
-		System.out.println("RobotPeer, addEnergy: " + energy);
 		energy += additionalEnergy;
-		System.out.println("RobotPeer, after addEnergy: " + energy);
 	}
 	
 	private void setEnergy(double newEnergy, boolean resetInactiveTurnCount) {
