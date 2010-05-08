@@ -613,25 +613,12 @@ public class BattleView extends Canvas {
 		for (IBonusSnapShot bonusSnapShot : snapShot.getBonuses()) {			
 			double x, y;
 			x = bonusSnapShot.getX();
-			
 			y = battleField.getHeight() - bonusSnapShot.getY();
-			//AffineTransform at = AffineTransform.getTranslateInstance(x, y);
-			// BEGIN
-			Shape shape = new Ellipse2D.Double(x, y, 50, 50);			
-//			Area bonusArea = new Area(shape);
-//			int scale = 2;
-//			at.scale(scale, scale);					
-//			// FINISH			
-//			Shape bonusArea2 = bonusArea.createTransformedArea(at);
-//			System.out.println("bonus area 2: " + bonusArea2);
-			Color bonusColor = Color.YELLOW;
-			g.setColor(bonusColor);
-			g.fill(shape);
-			//g.draw(shape);
+			AffineTransform at = AffineTransform.getTranslateInstance(x, y);
+			RenderImage bonusRenderImage = imageManager.getBonusRenderImage(bonusSnapShot.getImageFileName());				
+			bonusRenderImage.setTransform(at);
 			g.drawString(bonusSnapShot.getName(), (int)x, (int)y);
-						
-//			g.drawLine(0, 0, (int)x, (int)y);
-			//System.out.println("Battle View, drawBonuses, graphics: " + g);
+			bonusRenderImage.paint(g);			
 		}
 		g.setClip(savedClip);
 	}

@@ -46,12 +46,18 @@ public class ImageManager implements IImageManager {
 	private Image gunImage;
 	private Image radarImage;
 
+
+	
 	private static final int MAX_NUM_COLORS = 256;
 
 	private HashMap<Integer, RenderImage> robotBodyImageCache;
 	private HashMap<Integer, RenderImage> robotGunImageCache;
 	private HashMap<Integer, RenderImage> robotRadarImageCache;
 
+	// vodkhang@gmail.com
+	private HashMap<String, RenderImage> bonusImageCache;
+	// FINISH
+	
 	public ImageManager(ISettingsManager properties) {
 		this.properties = properties;
 	}
@@ -70,6 +76,10 @@ public class ImageManager implements IImageManager {
 		robotGunImageCache = new RenderCache<Integer, RenderImage>();
 		robotRadarImageCache = new RenderCache<Integer, RenderImage>();
 
+		// vodkhang@gmail.com
+		bonusImageCache = new RenderCache<String, RenderImage>();
+		// FINISH
+		
 		// Read images into the cache
 		getBodyImage();
 		getGunImage();
@@ -207,6 +217,13 @@ public class ImageManager implements IImageManager {
 		return img;
 	}
 
+	public RenderImage getBonusRenderImage(String fileName) {
+		if (bonusImageCache.containsKey(fileName)) {
+			return bonusImageCache.get(fileName);			
+		}
+		String longPathName = "/net/sf/robocode/ui/images/bonus/" + fileName;		
+		return new RenderImage(getImage(longPathName));
+	}
 	/**
 	 * Class used for caching rendered robot parts in various colors.
 	 *

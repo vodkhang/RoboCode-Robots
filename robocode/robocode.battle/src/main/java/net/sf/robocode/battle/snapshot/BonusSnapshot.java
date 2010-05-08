@@ -3,6 +3,7 @@ package net.sf.robocode.battle.snapshot;
 import java.awt.Shape;
 
 import net.sf.robocode.battle.peer.BonusPeer;
+import net.sf.robocode.battle.peer.IBonusPeer;
 
 import robocode.control.snapshot.IBonusSnapShot;
 // vodkhang@gmail.com
@@ -20,17 +21,17 @@ public class BonusSnapshot implements IBonusSnapShot{
 	private double x;	
 	private double y;
 	
-	public BonusSnapshot (BonusPeer bonusPeer) {
+	public BonusSnapshot (IBonusPeer bonusPeer) {
 		x = bonusPeer.getX();
 		y = bonusPeer.getY();
 		name = bonusPeer.getName();
-		imageName = bonusPeer.getImageName();
+		imageName = bonusPeer.getImageFileName();
 		//shape = bonusPeer.getShape();
 	}
 	/**
 	 * {@inheritDoc}
 	 */
-	public String getImageName() {
+	public String getImageFileName() {
 		// TODO Auto-generated method stub
 		return imageName;
 	}

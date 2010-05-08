@@ -29,7 +29,7 @@ public interface IBonusSnapShot {
 	 * Get the image name to draw image easier
 	 * @return name of the image to display
 	 */
-	public String getImageName();
+	public String getImageFileName();
 	/**
 	 * 
 	 * Used for temprorarily only, be careful yourself

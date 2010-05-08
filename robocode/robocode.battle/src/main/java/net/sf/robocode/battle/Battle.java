@@ -100,6 +100,7 @@ import net.sf.robocode.battle.events.BattleEventDispatcher;
 import net.sf.robocode.battle.peer.BonusPeer;
 import net.sf.robocode.battle.peer.BulletPeer;
 import net.sf.robocode.battle.peer.ContestantPeer;
+import net.sf.robocode.battle.peer.IBonusPeer;
 import net.sf.robocode.battle.peer.RobotPeer;
 import net.sf.robocode.battle.peer.TeamPeer;
 import net.sf.robocode.battle.snapshot.TurnSnapshot;
@@ -160,7 +161,7 @@ public final class Battle extends BaseBattle {
 
 	// vodkhang@gmail.com
 	// we can add the bonus peer here
-	private List<BonusPeer> bonuses = new ArrayList<BonusPeer>(); 
+	private List<IBonusPeer> bonuses = new ArrayList<IBonusPeer>(); 
 	// finish
 	
 	// Death events
@@ -675,9 +676,10 @@ public final class Battle extends BaseBattle {
 	 * 	generate some new rules
 	 */
 	private void updateBonuses() {
-		List<BonusPeer> inactiveBonuses = new ArrayList<BonusPeer>();
-		for (BonusPeer bonus : bonuses) {
-			for (RobotPeer robot : getRobotsAtRandom()) {
+		List<IBonusPeer> inactiveBonuses = new ArrayList<IBonusPeer>();
+		for (IBonusPeer bonus : bonuses) {
+//			Collection<RobotPeer> randomRobots = getRobotsAtRandom(); 
+			for (RobotPeer robot : robots) {
 				if (bonus.applyBonusToRobot(robot)) {
 					break;
 				}
@@ -688,7 +690,7 @@ public final class Battle extends BaseBattle {
 			}
 		}
 		bonuses.removeAll(inactiveBonuses);
-		BonusPeer newBonus = BonusPeer.createNewBonusPeer(battleRules);
+		IBonusPeer newBonus = BonusPeer.createNewBonusPeer(battleRules);
 		if (newBonus != null) {
 			bonuses.add(newBonus);
 		}		

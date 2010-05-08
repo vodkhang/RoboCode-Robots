@@ -34,4 +34,6 @@ public interface IImageManager {
 	RenderImage getColoredGunRenderImage(Integer color);
 
 	RenderImage getColoredRadarRenderImage(Integer color);
+	
+	RenderImage getBonusRenderImage(String fileName);
 }

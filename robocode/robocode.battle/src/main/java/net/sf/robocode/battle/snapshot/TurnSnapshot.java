@@ -17,6 +17,7 @@ package net.sf.robocode.battle.snapshot;
 import net.sf.robocode.battle.Battle;
 import net.sf.robocode.battle.peer.BonusPeer;
 import net.sf.robocode.battle.peer.BulletPeer;
+import net.sf.robocode.battle.peer.IBonusPeer;
 import net.sf.robocode.battle.peer.RobotPeer;
 import net.sf.robocode.serialization.IXmlSerializable;
 import net.sf.robocode.serialization.XmlReader;
@@ -76,7 +77,7 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 	 * @param readoutText {@code true} if the output text from the robots must be included in the snapshot;
 	 *                    {@code false} otherwise.
 	 */
-	public TurnSnapshot(Battle battle, List<RobotPeer> battleRobots, List<BulletPeer> battleBullets, boolean readoutText) {
+	private TurnSnapshot(Battle battle, List<RobotPeer> battleRobots, List<BulletPeer> battleBullets, boolean readoutText) {
 		robots = new ArrayList<IRobotSnapshot>();
 		bullets = new ArrayList<IBulletSnapshot>();
 
@@ -95,9 +96,9 @@ public final class TurnSnapshot implements java.io.Serializable, IXmlSerializabl
 	
 	// vodkhang@gmail.com
 	public TurnSnapshot(Battle battle, List<RobotPeer> battleRobots, List<BulletPeer> battleBullets, 
-			List<BonusPeer>battleBonuses, boolean readoutText) {
+			List<IBonusPeer>battleBonuses, boolean readoutText) {
 		this(battle, battleRobots, battleBullets, readoutText);
-		for (BonusPeer bonusPeer : battleBonuses) {
+		for (IBonusPeer bonusPeer : battleBonuses) {
 			bonuses.add(new BonusSnapshot(bonusPeer));
 		}		
 	}
