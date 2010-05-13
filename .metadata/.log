@@ -854,3 +854,429 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 !MESSAGE Could not find view: org.eclipse.ui.internal.introview
 !SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-08 19:01:56.874
 !MESSAGE OK
+!SESSION 2010-05-09 08:41:51.440 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-09 08:42:12.456
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-09 08:42:21.731
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-09 08:42:21.732
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 08:42:21.732
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 08:42:21.732
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 08:42:21.733
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-09 08:42:21.733
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 08:42:21.733
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-09 08:42:21.733
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 08:42:21.733
+!MESSAGE OK
+!SESSION 2010-05-09 15:11:31.718 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-09 15:11:43.394
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-09 15:11:52.233
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-09 15:11:52.233
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 15:11:52.233
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 15:11:52.233
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 15:11:52.233
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-09 15:11:52.233
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.233
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 15:11:52.234
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-09 15:11:52.234
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 15:11:52.234
+!MESSAGE OK
+!SESSION 2010-05-09 22:26:10.282 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-09 22:26:28.347
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-09 22:26:34.602
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-09 22:26:34.602
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 22:26:34.602
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 22:26:34.602
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 22:26:34.602
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-09 22:26:34.603
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-09 22:26:34.603
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-09 22:26:34.603
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-09 22:26:34.603
+!MESSAGE OK
+!SESSION 2010-05-10 09:11:09.362 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-10 09:12:06.474
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-10 09:12:22.776
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 09:12:22.776
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 09:12:22.776
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 09:12:22.776
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-10 09:12:22.776
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 09:12:22.776
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-10 09:12:22.776
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 09:12:22.776
+!MESSAGE OK
+!SESSION 2010-05-10 18:29:20.067 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-10 18:29:51.735
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-10 18:29:59.972
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 18:29:59.972
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 18:29:59.972
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 18:29:59.972
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-10 18:29:59.972
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-10 18:29:59.972
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-10 18:29:59.972
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-10 18:29:59.972
+!MESSAGE OK
+!SESSION 2010-05-11 07:37:17.389 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-11 07:37:38.124
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-11 07:37:46.564
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 07:37:46.564
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 07:37:46.564
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 07:37:46.564
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-11 07:37:46.564
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 07:37:46.564
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-11 07:37:46.564
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 07:37:46.564
+!MESSAGE OK
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2010-05-11 07:38:31.069
+!MESSAGE Usage data uploaded to http://udc.eclipse.org/upload.php in 38357 milliseconds.
+!SESSION 2010-05-11 22:11:51.472 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-11 22:12:11.300
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-11 22:12:19.537
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 22:12:19.537
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 22:12:19.537
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 22:12:19.537
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-11 22:12:19.537
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-11 22:12:19.537
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-11 22:12:19.537
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-11 22:12:19.537
+!MESSAGE OK
+!SESSION 2010-05-12 18:22:34.163 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-12 18:23:04.646
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-12 18:23:15.056
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-12 18:23:15.056
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-12 18:23:15.056
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-12 18:23:15.056
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-12 18:23:15.056
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-12 18:23:15.056
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-12 18:23:15.056
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-12 18:23:15.056
+!MESSAGE OK
+!SESSION 2010-05-13 22:42:19.137 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-13 22:42:40.439
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-13 22:42:49.966
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-13 22:42:49.968
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-13 22:42:49.968
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-13 22:42:49.968
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-13 22:42:49.968
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.968
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.969
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.969
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-13 22:42:49.969
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-13 22:42:49.969
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-13 22:42:49.969
+!MESSAGE OK

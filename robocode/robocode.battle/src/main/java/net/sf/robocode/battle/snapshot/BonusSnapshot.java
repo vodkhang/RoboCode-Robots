@@ -1,8 +1,5 @@
 package net.sf.robocode.battle.snapshot;
 
-import java.awt.Shape;
-
-import net.sf.robocode.battle.peer.bonus.BonusPeer;
 import net.sf.robocode.battle.peer.bonus.IBonusPeer;
 
 import robocode.control.snapshot.IBonusSnapShot;
@@ -42,11 +39,6 @@ public class BonusSnapshot implements IBonusSnapShot{
 		// TODO Auto-generated method stub
 		return name;
 	}
-
-//	public Shape getShape() {
-//		// TODO Auto-generated method stub
-//		return shape;
-//	}
 
 	public double getX() {
 		// TODO Auto-generated method stub

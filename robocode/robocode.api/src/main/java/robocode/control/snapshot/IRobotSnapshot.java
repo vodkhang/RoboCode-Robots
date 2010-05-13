@@ -206,4 +206,10 @@ public interface IRobotSnapshot {
 	 * @return snapshot of the current score for this robot.
 	 */
 	IScoreSnapshot getScoreSnapshot();
+
+	/**
+	 * 
+	 * @return
+	 */
+	String getAddionalImageName();
 }

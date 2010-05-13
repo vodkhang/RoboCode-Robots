@@ -124,6 +124,10 @@ public final class RobotSnapshot implements Serializable, IXmlSerializable, IRob
 	/** Snapshot of score of the robot */
 	private IScoreSnapshot robotScoreSnapshot;
 
+	// vodkhang@gmail.com
+	private String additionalImageName;
+	// FINISH
+	
 	/**
 	 * Creates a snapshot of a robot that must be filled out with data later.
 	 */
@@ -179,6 +183,10 @@ public final class RobotSnapshot implements Serializable, IXmlSerializable, IRob
 		}
 
 		robotScoreSnapshot = new ScoreSnapshot(robot.getName(), robot.getRobotStatistics());
+		
+		// vodkhang@gmail.com
+		additionalImageName = robot.getAdditionalImageName();
+		// FINISH
 	}
 
 	@Override
@@ -287,6 +295,12 @@ public final class RobotSnapshot implements Serializable, IXmlSerializable, IRob
 		return y;
 	}
 
+	// vodkhang@gmail.com
+	public String getAddionalImageName() {
+		return additionalImageName;
+	}
+	// FINISH
+	
 	/**
 	 * {@inheritDoc}
 	 */

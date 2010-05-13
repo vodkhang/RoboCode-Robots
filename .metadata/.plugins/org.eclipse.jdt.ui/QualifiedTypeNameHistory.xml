@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="robocode.control.snapshot.IBonusSnapShot"/>
 <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D"/>
 <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
-<fullyQualifiedTypeName name="net.sf.robocode.ui.ImageManager.RenderCache"/>
 <fullyQualifiedTypeName name="net.sf.robocode.battle.peer.BonusPeer"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="net.sf.robocode.battle.peer.BonusPeer.BonusPeerType"/>
@@ -30,11 +29,16 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.BonusPeer.BonusPeerType"/>
 <fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.StrongBonusPeer"/>
-<fullyQualifiedTypeName name="net.sf.robocode.battle.peer.RobotPeer"/>
-<fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.BonusPeer"/>
 <fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.StrengthPowerBonusPeer"/>
 <fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.WeakBonusPeer"/>
-<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-<fullyQualifiedTypeName name="net.sf.robocode.ui.gfx.RenderImage"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.EnergyBonusPeer"/>
+<fullyQualifiedTypeName name="net.sf.robocode.battle.peer.bonus.BonusPeer"/>
+<fullyQualifiedTypeName name="javax.management.DescriptorKey"/>
+<fullyQualifiedTypeName name="java.awt.geom.AffineTransform"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="net.sf.robocode.ui.ImageManager.RenderCache"/>
+<fullyQualifiedTypeName name="net.sf.robocode.ui.gfx.RenderImage"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="net.sf.robocode.battle.peer.RobotPeer"/>
 </qualifiedTypeNameHistroy>

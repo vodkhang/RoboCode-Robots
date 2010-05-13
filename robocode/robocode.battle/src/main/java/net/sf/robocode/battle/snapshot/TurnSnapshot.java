@@ -17,7 +17,6 @@ package net.sf.robocode.battle.snapshot;
 import net.sf.robocode.battle.Battle;
 import net.sf.robocode.battle.peer.BulletPeer;
 import net.sf.robocode.battle.peer.RobotPeer;
-import net.sf.robocode.battle.peer.bonus.BonusPeer;
 import net.sf.robocode.battle.peer.bonus.IBonusPeer;
 import net.sf.robocode.serialization.IXmlSerializable;
 import net.sf.robocode.serialization.XmlReader;

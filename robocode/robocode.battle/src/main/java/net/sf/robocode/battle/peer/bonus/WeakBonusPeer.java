@@ -5,5 +5,6 @@ public class WeakBonusPeer extends StrengthPowerBonusPeer {
 	public WeakBonusPeer(double x, double y) {
 		super (x, y, "weak", "weak", ACTIVE_TIME_LIFE, StrengthPowerBonusPeer.WEAK_STRONG);
 		numberOfImages = 4;
+		additionalImageName = "weak";
 	}	
 }

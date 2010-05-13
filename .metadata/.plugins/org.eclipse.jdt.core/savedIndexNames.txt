@@ -24,6 +24,5 @@ INDEX VERSION 1.126+D:\RMIT_Learning\Robocode-workspace\.metadata\.plugins\org.e
 2690281349.index
 844486800.index
 3585733931.index
-2394798482.index
 2787170733.index
 2815204631.index

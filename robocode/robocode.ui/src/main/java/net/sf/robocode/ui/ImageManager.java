@@ -56,6 +56,7 @@ public class ImageManager implements IImageManager {
 
 	// vodkhang@gmail.com
 	private HashMap<String, RenderImage> bonusImageCache;
+	private HashMap<String, RenderImage> additionalImageCache;
 	// FINISH
 	
 	public ImageManager(ISettingsManager properties) {
@@ -78,6 +79,7 @@ public class ImageManager implements IImageManager {
 
 		// vodkhang@gmail.com
 		bonusImageCache = new RenderCache<String, RenderImage>();
+		additionalImageCache = new RenderCache<String, RenderImage>();
 		// FINISH
 		
 		// Read images into the cache
@@ -221,17 +223,30 @@ public class ImageManager implements IImageManager {
 	 */
 	public RenderImage getBonusRenderImage(String fileName, int frameNumber) {
 		String realName = fileName + "-" + frameNumber;
-		RenderImage img = null;
-		try {
-			 img = bonusImageCache.get(realName);
-		} catch (NullPointerException ex) {			
-		}
+		RenderImage img = bonusImageCache.get(realName);		
 		if (img != null) {
 			return img;
 		}		
 		String longPathName = "/net/sf/robocode/ui/images/bonus/" + realName + ".png";	
 		img = new RenderImage(getImage(longPathName));
 		bonusImageCache.put(realName, img);			
+		return img;
+	}
+	
+	public RenderImage getAdditionalImage(String fileName) {
+		if (fileName == null) {
+			return null;
+		}
+		RenderImage img = additionalImageCache.get(fileName);
+		if (img != null) {
+			return img;
+		}
+		String longPathName = "/net/sf/robocode/ui/images/bonus/additional/" + fileName + ".png";;
+		img = new RenderImage(getImage(longPathName));
+		if (img == null) {
+			throw new NullPointerException("Can not find the image");
+		}
+		additionalImageCache.put(fileName, img);
 		return img;
 	}
 	// FINISH

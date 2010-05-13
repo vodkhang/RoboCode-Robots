@@ -1,5 +1,7 @@
 package net.sf.robocode.battle.peer.bonus;
 
+import javax.management.DescriptorKey;
+
 import net.sf.robocode.battle.peer.RobotPeer;
 
 /**
@@ -13,16 +15,26 @@ public interface IBonusPeer {
 	double getY();
 	
 	void decrementTimeLife();
-	
+	void decrementAffectTimeLife();
+	/**
+	 * 
+	 * @return
+	 */
 	boolean isActive();
-	
+
 	boolean isAffecting();
 	
 	String getName();
 	
 	String getImageFileName();
 	int getImageIndex();
-	boolean applyBonusToRobot(RobotPeer robot);
+	
+	/**
+	 *
+	 * @param robot
+	 * @return
+	 */
+	boolean applyBonusToRobot(RobotPeer robot);	
 	
 	void affect(); // used for long time affect on robot
 	void inaffect(); // used for stop affecting

@@ -193,6 +193,8 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 	// vodkhang@gmail.com
 	// Here is the factor to decide the bullet power to increase up or down. Default will be one
 	private double bulletPowerFactor = 1;
+	
+	private String additionalImageName = null;
 	// FINISH
 	
 	
@@ -329,12 +331,22 @@ public final class RobotPeer implements IRobotPeerBattle, IRobotPeer {
 	public void setBulletPowerFactor(double factor) {
 		bulletPowerFactor = factor;
 	}	
+	
+	public String getAdditionalImageName() {
+		return additionalImageName;
+	}
+
+	public void setAdditionalImageName(String additionalImageName) {
+		this.additionalImageName = additionalImageName;
+	}
+
 	// FINISH
 	
 	// -------------------
 	// status 
 	// -------------------
 
+	
 	public void setPaintEnabled(boolean enabled) {
 		isPaintEnabled = enabled;
 	}

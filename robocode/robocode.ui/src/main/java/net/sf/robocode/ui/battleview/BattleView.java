@@ -62,11 +62,10 @@ public class BattleView extends Canvas {
 	// vodkhang@gmail.com
 	// We will defer the initialization of bullet area when we need to get the direction of the bullet to  
 	//	draw a good rectangle
-	//private final static Area BULLET_AREA = new Area(new Line2D.Double(0.5, 0.5, 5, 5));
 	private final static Area BULLET_AREA = new Area();
-	//private final static Area BULLET_AREA = new Area(new Rectangle2D.Double(0.5, 0.5, 3, 1));
 	//private final static Area BULLET_AREA = new Area(new Ellipse2D.Double(-0.5, -0.5, 1, 1));
-
+	// FINISH
+	
 	private final static int ROBOT_TEXT_Y_OFFSET = 24;
 
 	// The battle and battlefield,
@@ -457,6 +456,17 @@ public class BattleView extends Canvas {
 					radarRenderImage.setTransform(at);
 					radarRenderImage.paint(g);
 				}
+				
+				// vodkhang@gmail.com
+				System.out.println("BattleView, drawRobots, additionalImageName: " + robotSnapshot.getAddionalImageName());
+				RenderImage additionalImage = imageManager.getAdditionalImage(robotSnapshot.getAddionalImageName());
+				if (additionalImage == null) {
+					continue;
+				}
+				at = AffineTransform.getTranslateInstance(x, y - 40);
+				additionalImage.setTransform(at);
+				additionalImage.paint(g);
+				// FINISH
 			}
 		}
 	}

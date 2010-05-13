@@ -703,11 +703,11 @@ public final class Battle extends BaseBattle {
 			activeBonuses.add(newBonus);
 		}
 		
-		// apply the affect robot and remove inaffect ones
+		// apply the affect robot and remove out of affect ones
 		Collection<IBonusPeer> outOfAffectBonuses = new ArrayList<IBonusPeer>();
 		for (IBonusPeer bonus : affectingBonuses) {
 			bonus.affect();
-			bonus.decrementTimeLife();
+			bonus.decrementAffectTimeLife();
 			if (!bonus.isAffecting()) {
 				outOfAffectBonuses.add(bonus);
 				bonus.inaffect();
