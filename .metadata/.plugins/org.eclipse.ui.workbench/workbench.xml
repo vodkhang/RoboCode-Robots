@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="25" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -33,13 +33,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" partName="BonusPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java" title="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="338" selectionTopPixel="102"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Module.java" partName="Module.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java" title="Module.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/Module.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1120" selectionTopPixel="187"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ISettingsManager.java" partName="ISettingsManager.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.core/src/main/java/net/sf/robocode/settings/ISettingsManager.java" title="ISettingsManager.java" tooltip="robocode.core/src/main/java/net/sf/robocode/settings/ISettingsManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.core/src/main/java/net/sf/robocode/settings/ISettingsManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="820" selectionTopPixel="187"/>
 </editor>
 </editors>
 <views>
@@ -49,6 +54,8 @@
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="2" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
@@ -114,11 +121,11 @@
 </sorter>
 </viewState>
 </view>
-<view id="org.eclipse.help.ui.HelpView" partName="Help">
-<viewState pageId="context-help-page"/>
-</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
+</view>
+<view id="org.eclipse.help.ui.HelpView" partName="Help">
+<viewState pageId="context-help-page"/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
@@ -194,15 +201,15 @@
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1c2e163" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
 <fastViews>
 <view id="org.eclipse.help.ui.HelpView" ratio="0.29977462"/>
 <view id="org.eclipse.ui.internal.introview" ratio="0.21863261"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
-<fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -272,9 +279,104 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.core/src/main/java/net/sf/robocode/battle/BattleProperties.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/AdvancedRobot.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/DeathEvent.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.api/src/main/java/robocode/Event.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.core/src/main/java/net/sf/robocode/settings/ISettingsManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.core/src/main/java/net/sf/robocode/settings/SettingsManager.java"/>
 </editors>
-<item active="true" historyLabel="BonusPeer.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="BonusPeer.java" index="0">
+<position info="not_deleted" x="1319" y="0"/>
+</item>
+<item historyLabel="BattleProperties.java" index="1">
+<position info="not_deleted" x="5188" y="13"/>
+</item>
+<item historyLabel="AdvancedRobot.java" index="2">
+<position info="not_deleted" x="2063" y="13"/>
+</item>
+<item historyLabel="AdvancedRobot.java" index="2">
+<position info="not_deleted" x="2139" y="0"/>
+</item>
+<item historyLabel="AdvancedRobot.java" index="2">
+<position info="not_deleted" x="35562" y="13"/>
+</item>
+<item historyLabel="AdvancedRobot.java" index="2">
+<position info="not_deleted" x="39634" y="0"/>
+</item>
+<item historyLabel="AdvancedRobot.java" index="2">
+<position info="not_deleted" x="50937" y="0"/>
+</item>
+<item historyLabel="DeathEvent.java" index="3">
+<position info="not_deleted" x="1156" y="0"/>
+</item>
+<item historyLabel="Event.java" index="4">
+<position info="not_deleted" x="1663" y="0"/>
+</item>
+<item historyLabel="DeathEvent.java" index="3">
+<position info="not_deleted" x="1218" y="0"/>
+</item>
+<item historyLabel="Event.java" index="4">
+<position info="not_deleted" x="1663" y="0"/>
+</item>
+<item historyLabel="AdvancedRobot.java" index="2">
+<position info="not_deleted" x="50937" y="0"/>
+</item>
+<item historyLabel="BattleProperties.java" index="1">
+<position info="not_deleted" x="5188" y="13"/>
+</item>
+<item historyLabel="Module.java" index="5">
+<position info="not_deleted" x="1120" y="10"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="2194" y="10"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="7853" y="17"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="8593" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="8861" y="0"/>
+</item>
+<item historyLabel="ISettingsManager.java" index="7">
+<position info="not_deleted" x="820" y="16"/>
+</item>
+<item historyLabel="SettingsManager.java" index="8">
+<position info="not_deleted" x="2612" y="0"/>
+</item>
+<item historyLabel="ISettingsManager.java" index="7">
+<position info="not_deleted" x="820" y="16"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="8861" y="0"/>
+</item>
+<item historyLabel="SettingsManager.java" index="8">
+<position info="not_deleted" x="2612" y="0"/>
+</item>
+<item historyLabel="SettingsManager.java" index="8">
+<position info="not_deleted" x="11709" y="17"/>
+</item>
+<item historyLabel="SettingsManager.java" index="8">
+<position info="not_deleted" x="11747" y="0"/>
+</item>
+<item historyLabel="SettingsManager.java" index="8">
+<position info="not_deleted" x="10153" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="8861" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="6482" y="0"/>
+</item>
+<item historyLabel="BattleView.java" index="6">
+<position info="not_deleted" x="18956" y="0"/>
+</item>
+<item active="true" historyLabel="ISettingsManager.java" index="7">
+<position info="not_deleted" x="820" y="16"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -298,6 +400,30 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SettingsManager.java" tooltip="robocode.core/src/main/java/net/sf/robocode/settings/SettingsManager.java">
+<persistable path="/robocode.core/src/main/java/net/sf/robocode/settings/SettingsManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ISettingsManager.java" tooltip="robocode.core/src/main/java/net/sf/robocode/settings/ISettingsManager.java">
+<persistable path="/robocode.core/src/main/java/net/sf/robocode/settings/ISettingsManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java">
+<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Module.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/Module.java">
+<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Event.java" tooltip="robocode.api/src/main/java/robocode/Event.java">
+<persistable path="/robocode.api/src/main/java/robocode/Event.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeathEvent.java" tooltip="robocode.api/src/main/java/robocode/DeathEvent.java">
+<persistable path="/robocode.api/src/main/java/robocode/DeathEvent.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdvancedRobot.java" tooltip="robocode.api/src/main/java/robocode/AdvancedRobot.java">
+<persistable path="/robocode.api/src/main/java/robocode/AdvancedRobot.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleProperties.java" tooltip="robocode.core/src/main/java/net/sf/robocode/battle/BattleProperties.java">
+<persistable path="/robocode.core/src/main/java/net/sf/robocode/battle/BattleProperties.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
 </file>
@@ -313,35 +439,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EnergyBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java">
-<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Module.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/Module.java">
-<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StrengthPowerBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrengthPowerBonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrengthPowerBonusPeer.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StrongBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrongBonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrongBonusPeer.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AffineTransform.class" tooltip="java.awt.geom.AffineTransform">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=robocode.ui/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.awt.geom(AffineTransform.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Battle.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/Battle.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IImageManager.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/IImageManager.java">
-<persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/IImageManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeakBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/WeakBonusPeer.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/WeakBonusPeer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRobotSnapshot.java" tooltip="robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java">
-<persistable path="/robocode.api/src/main/java/robocode/control/snapshot/IRobotSnapshot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RobotSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/RobotSnapshot.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/RobotSnapshot.java"/>
 </file>
 </mruList>
 </workbench>
