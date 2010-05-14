@@ -1,6 +1,5 @@
 package net.sf.robocode.battle.peer.bonus;
 
-import javax.management.DescriptorKey;
 
 import net.sf.robocode.battle.peer.RobotPeer;
 

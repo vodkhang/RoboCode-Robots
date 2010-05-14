@@ -1280,3 +1280,100 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 !MESSAGE Could not find view: org.eclipse.ui.internal.introview
 !SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-13 22:42:49.969
 !MESSAGE OK
+!SESSION 2010-05-14 07:03:43.950 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-14 07:03:55.743
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-14 07:04:04.887
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-14 07:04:04.887
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 07:04:04.887
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 07:04:04.887
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 07:04:04.888
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-14 07:04:04.888
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 07:04:04.888
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-14 07:04:04.888
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 07:04:04.888
+!MESSAGE OK
+!SESSION 2010-05-14 19:14:55.724 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_19
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 4 4 2010-05-14 19:15:30.842
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2010-05-14 19:15:40.265
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 19:15:40.265
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 19:15:40.265
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 19:15:40.265
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2010-05-14 19:15:40.265
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 0 0 2010-05-14 19:15:40.265
+!MESSAGE 
+!SUBENTRY 2 org.eclipse.ui 4 0 2010-05-14 19:15:40.265
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2010-05-14 19:15:40.265
+!MESSAGE OK
+
+!ENTRY org.eclipse.jdt.ui 4 0 2010-05-14 21:03:28.554
+!MESSAGE Unsupported search pattern: "net.sf.robocode.battle.BaseBattle(ISettingsManager, IBattleManager, BattleEventDispatcher)"

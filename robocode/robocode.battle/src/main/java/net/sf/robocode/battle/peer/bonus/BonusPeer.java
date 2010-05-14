@@ -44,7 +44,6 @@ public abstract class BonusPeer implements IBonusPeer {
 	}
 	
 	public void decrementAffectTimeLife() {
-//		System.out.println("affectTimeLife : " + affectTimeLife);
 		affectTimeLife --;
 	}
 	

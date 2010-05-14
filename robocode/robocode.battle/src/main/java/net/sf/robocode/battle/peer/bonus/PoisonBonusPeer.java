@@ -19,17 +19,4 @@ public class PoisonBonusPeer extends EnergyBonusPeer{
 			super.affect();
 		}
 	}
-//	public boolean applyBonusToRobot(RobotPeer robot) {
-//		// TODO Auto-generated method stub
-//		if (isRobotInRange(robot, affectRadius)) {
-//			if (robot.getEnergy() > 50) {
-//				robot.updateEnergy(additionalEnergy);
-//			} else {
-//				robot.updateEnergy(robot.getEnergy()/2 - robot.getEnergy());
-//			}
-//			activeTimeLife = -1;
-//			return true;
-//		}
-//		return false;
-//	}
 }

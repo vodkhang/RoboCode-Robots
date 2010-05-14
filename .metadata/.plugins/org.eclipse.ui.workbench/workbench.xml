@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="25" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -33,33 +33,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Module.java" partName="Module.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java" title="Module.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/Module.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1120" selectionTopPixel="187"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" partName="BattleView.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" title="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-<editorState selectionHorizontalPixel="56" selectionLength="0" selectionOffset="13833" selectionTopPixel="6953"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PoisonBonusPeer.java" partName="PoisonBonusPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java" title="PoisonBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="663" selectionTopPixel="193"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EnergyBonusPeer.java" partName="EnergyBonusPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java" title="EnergyBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="186" selectionOffset="958" selectionTopPixel="261"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HealthBonusPeer.java" partName="HealthBonusPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java" title="HealthBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" partName="BonusPeer.java" path="D:/RMIT_Learning/Robocode-workspace/robocode/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java" title="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="338" selectionTopPixel="102"/>
 </editor>
 </editors>
 <views>
@@ -75,7 +55,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -293,170 +272,9 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=robocode.ui/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.awt.geom(AffineTransform.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrongBonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrengthPowerBonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=robocode.ui/C:\/Program Files\/Java\/jre6\/lib\/rt.jar&lt;java.awt.geom(AffineTransform.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
 </editors>
-<item historyLabel="BonusPeer.java" index="0">
-<position info="not_deleted" x="1319" y="63"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="1">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="Module.java" index="2">
-<position info="not_deleted" x="1120" y="10"/>
-</item>
-<item historyLabel="BattleView.java" index="3">
-<position info="not_deleted" x="2194" y="10"/>
-</item>
-<item historyLabel="BattleView.java" index="3">
-<position info="not_deleted" x="13476" y="20"/>
-</item>
-<item historyLabel="AffineTransform.class" index="4">
+<item active="true" historyLabel="BonusPeer.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="3">
-<position info="not_deleted" x="13945" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position/>
-</item>
-<item historyLabel="StrongBonusPeer.java" index="8">
-<position info="not_deleted" x="318" y="0"/>
-</item>
-<item historyLabel="StrengthPowerBonusPeer.java" index="9">
-<position info="not_deleted" x="409" y="0"/>
-</item>
-<item historyLabel="StrongBonusPeer.java" index="8">
-<position info="not_deleted" x="318" y="0"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position/>
-</item>
-<item historyLabel="BattleView.java" index="3">
-<position info="not_deleted" x="13945" y="0"/>
-</item>
-<item historyLabel="Module.java" index="10">
-<position info="not_deleted" x="82" y="0"/>
-</item>
-<item historyLabel="Module.java" index="10">
-<position info="not_deleted" x="1120" y="10"/>
-</item>
-<item historyLabel="AffineTransform.class" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="298" y="19"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="360" y="2"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="370" y="0"/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position/>
-</item>
-<item historyLabel="BonusPeer.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position info="not_deleted" x="1110" y="0"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BonusPeer.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="370" y="0"/>
-</item>
-<item historyLabel="Module.java" index="13">
-<position info="not_deleted" x="1120" y="10"/>
-</item>
-<item historyLabel="BattleView.java" index="14">
-<position info="not_deleted" x="2194" y="10"/>
-</item>
-<item historyLabel="BattleView.java" index="14">
-<position info="not_deleted" x="2349" y="0"/>
-</item>
-<item historyLabel="BattleView.java" index="14">
-<position info="not_deleted" x="12043" y="10"/>
-</item>
-<item historyLabel="BattleView.java" index="14">
-<position info="not_deleted" x="13833" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="764" y="0"/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HealthBonusPeer.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="622" y="392"/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position info="not_deleted" x="774" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position info="not_deleted" x="936" y="0"/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position info="not_deleted" x="774" y="0"/>
-</item>
-<item historyLabel="PoisonBonusPeer.java" index="5">
-<position/>
-</item>
-<item historyLabel="EnergyBonusPeer.java" index="7">
-<position info="not_deleted" x="958" y="186"/>
-</item>
-<item active="true" historyLabel="PoisonBonusPeer.java" index="5">
-<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -480,23 +298,26 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PoisonBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/IBonusPeer.java">
+<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/IBonusPeer.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HealthBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/HealthBonusPeer.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EnergyBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/EnergyBonusPeer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PoisonBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/PoisonBonusPeer.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BattleView.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java">
 <persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/battleview/BattleView.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Module.java" tooltip="robocode.ui/src/main/java/net/sf/robocode/ui/Module.java">
 <persistable path="/robocode.ui/src/main/java/net/sf/robocode/ui/Module.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/BonusPeer.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StrengthPowerBonusPeer.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrengthPowerBonusPeer.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/peer/bonus/StrengthPowerBonusPeer.java"/>
@@ -521,9 +342,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RobotSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/RobotSnapshot.java">
 <persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/RobotSnapshot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TurnSnapshot.java" tooltip="robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/TurnSnapshot.java">
-<persistable path="/robocode.battle/src/main/java/net/sf/robocode/battle/snapshot/TurnSnapshot.java"/>
 </file>
 </mruList>
 </workbench>
